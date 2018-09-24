@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Feature: Provisioning and Registration API</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>PlatformAutomation Automation Report</td>
+                          <td>version 1</td>
+                        <td>24 Sep 2018, 10:14</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Feature Report</h2>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        <thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="6">Steps</th>
+    <th colspan="2">Totals</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+        <tbody>
+        <tr>
+          <td class="tagname">Provisioning and Registration API</td>
+                    <td  class="passed"    >4</td>
+          <td >0</td>
+          <td class="total">4</td>
+          <td      class="passed"    >40</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">40</td>
+          <td class="duration" data-value="93837956132">1m 33s 837ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Provisioning and Registration API</span>
+  
+
+  </div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+       <a href="PlatformRegression777.html">@PlatformRegression777</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate REST endpoint for Registration POST API-C179500</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">087ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection establishes with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">840ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-4" class="collapse collapsable-details">
+          <pre><font color="blue"><b>Connection Establish for : 10.2.114.113:22</b></font><br/></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User read data from excel with rowIndex "1"</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User fetch registry values of old RMM agent</span>
+  
+  <span class="lead-duration duration">1s 357ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-5" class="collapse collapsable-details">
+          <pre>Member ID is->1234
+Site ID is->50109539
+Reg ID is->53758699</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User fetch AgentCore EndPointID from agentCore config file from tag</span>
+  
+  <span class="lead-duration duration">421ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-6" class="collapse collapsable-details">
+          <pre><font color="blue"><b>EndPoint ID is 69c21305-4a58-4433-a968-19120bb58afc</b></font><br/></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User send a Get request for API endpoint as "/agent/v1/partner/PartnerID/endpoint/EndPointID/registration"</span>
+  
+  <span class="lead-duration duration">11s 017ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-7" class="collapse collapsable-details">
+          <pre>I send a Get request for URL https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/registration</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">433ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-8" class="collapse collapsable-details">
+          <pre>Status OK</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should fetch response for API</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-9" class="collapse collapsable-details">
+          <pre>
+
+Response is :{   "endpointID": "69c21305-4a58-4433-a968-19120bb58afc",   "agentID": "69c21305-4a58-4433-a968-19120bb58afc",   "partnerID": "1234",   "siteID": "50109539",   "clientID": "50109539",   "legacyRegID": "53758699",   "installed": true,   "sysInfo": {      "timestamp_utc": "2018-09-21T17:29:05.883Z",      "osType": "windows",      "osName": "Microsoft Windows 7 Professional ",      "osVersion": "6.1.7601",      "osSerialNumber": "00371-220-7340795-06641",      "hostName": "Juno-win7-64",      "macAddress": "00:50:56:A7:7B:69",      "processorid": "1FABFBFF000306F2",      "processorType": "3",      "hardDriveSerialNumber": "",      "memory": "",      "motherboardAdapter": "None",      "cdromSerial": "",      "logicalDiskVolumeSerialNumber": "24856D53,5A1E1E9F,CA383253",      "biosSerial": "VMware-42 27 3c 9f e4 40 cc 17-55 ca 6b 70 03 45 c8 48",      "virtualMachineIdentity": "9F3C2742-40E4-17CC-55CA-6B700345C848",      "systemManufacturerReference": "VMware Virtual Platform",      "mode": "",      "endpointType": "SERVER_VRT1"   },   "publicIPAddress": "125.22.49.114",   "token": "",   "agentInstalledVersion": ""}</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User send a POST request for agent registration API endpoint as "/agent/v1/registration"</span>
+  
+  <span class="lead-duration duration">10s 904ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-10" class="collapse collapsable-details">
+          <pre>I send a Post request for URL https://integration.agent.service.itsupport247.net/agent/v1/registration</pre>
+        </div>
+      </div>
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+                    <a>Output 2</a>
+        </div>
+        <div id="msg-11" class="collapse collapsable-details">
+          <pre>Json format used for post :{"agentID":"69c21305-4a58-4433-a968-19120bb58afc","clientID":"50109539","legacyRegID":"53758699","sysInfo":{"motherboardAdapter":"None","hostName":"win10-32ACT","systemManufacturerReference":"VMware Virtual Platform","memory":"","hardDriveSerialNumber":"RPF50ACE3USG56","processorType":"3,4","logicalDiskVolumeSerialNumber":"CA5B7C15","cdromSerial":"NA","timestampUTC":"2018-04-17T06:59:32.659Z","osName":"Microsoft Windows 10 Pro","virtualMachineIdentity":"3CA72742-7CB4-4E01-1ED6-0107973B5E20","osSerialNumber":"00330-80000-00000-AA063","macAddress":"00:50:56:A7:25:2F,00:50:56:A7:35:2F","processorid":"1FABFBFF000006F2,1FABFBFF000306F2","osVersion":"20.0.16299","osType":"windows","biosSerial":"VMware-42 27 a7 3c b4 7c 01 4e-1e d6 01 07 97 3b 5e 20"},"endpointID":"69c21305-4a58-4433-a968-19120bb58afc","siteID":"50109539","partnerID":"50001794"}</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should validate the "200" as in response</span>
+  
+  <span class="lead-duration duration">234ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-12" class="collapse collapsable-details">
+          <pre>Status OK</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-13" class="collapse collapsable-details">
+          <pre>
+
+Response is :"cb6a1754-1081-426e-b219-e44fb3187522"</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-14">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-14" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">002ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+       <a href="PlatformRegression777.html">@PlatformRegression777</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate REST endpoint for Registration POST API-C179500</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-16" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection establishes with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">316ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-18" class="collapse collapsable-details">
+          <pre><font color="blue"><b>Connection Establish for : 10.2.114.113:22</b></font><br/></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User read data from excel with rowIndex "2"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User fetch registry values of old RMM agent</span>
+  
+  <span class="lead-duration duration">879ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-19" class="collapse collapsable-details">
+          <pre>Member ID is->1234
+Site ID is->50109539
+Reg ID is->53758699</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User fetch AgentCore EndPointID from agentCore config file from tag</span>
+  
+  <span class="lead-duration duration">217ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-20" class="collapse collapsable-details">
+          <pre><font color="blue"><b>EndPoint ID is 69c21305-4a58-4433-a968-19120bb58afc</b></font><br/></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User send a Get request for API endpoint as "/agent/v1/partner/PartnerID/endpoint/EndPointID/registration"</span>
+  
+  <span class="lead-duration duration">11s</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-21" class="collapse collapsable-details">
+          <pre>I send a Get request for URL https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/registration</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">093ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-22" class="collapse collapsable-details">
+          <pre>Status OK</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-23" class="collapse collapsable-details">
+          <pre>
+
+Response is :{   "endpointID": "69c21305-4a58-4433-a968-19120bb58afc",   "agentID": "69c21305-4a58-4433-a968-19120bb58afc",   "partnerID": "1234",   "siteID": "50109539",   "clientID": "50109539",   "legacyRegID": "53758699",   "installed": true,   "sysInfo": {      "timestamp_utc": "2018-09-21T17:29:05.883Z",      "osType": "windows",      "osName": "Microsoft Windows 7 Professional ",      "osVersion": "6.1.7601",      "osSerialNumber": "00371-220-7340795-06641",      "hostName": "Juno-win7-64",      "macAddress": "00:50:56:A7:7B:69",      "processorid": "1FABFBFF000306F2",      "processorType": "3",      "hardDriveSerialNumber": "",      "memory": "",      "motherboardAdapter": "None",      "cdromSerial": "",      "logicalDiskVolumeSerialNumber": "24856D53,5A1E1E9F,CA383253",      "biosSerial": "VMware-42 27 3c 9f e4 40 cc 17-55 ca 6b 70 03 45 c8 48",      "virtualMachineIdentity": "9F3C2742-40E4-17CC-55CA-6B700345C848",      "systemManufacturerReference": "VMware Virtual Platform",      "mode": "",      "endpointType": "SERVER_VRT1"   },   "publicIPAddress": "125.22.49.114",   "token": "",   "agentInstalledVersion": ""}</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User send a POST request for agent registration API endpoint as "/agent/v1/registration"</span>
+  
+  <span class="lead-duration duration">10s 133ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-24" class="collapse collapsable-details">
+          <pre>I send a Post request for URL https://integration.agent.service.itsupport247.net/agent/v1/registration</pre>
+        </div>
+      </div>
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+                    <a>Output 2</a>
+        </div>
+        <div id="msg-25" class="collapse collapsable-details">
+          <pre>Json format used for post :{"agentID":"69c21305-4a58-4433-a968-19120bb58afc","clientID":"50109539","legacyRegID":"53758699","sysInfo":{"motherboardAdapter":"None","hostName":"win10-32ACT","systemManufacturerReference":"VMware Virtual Platform","memory":"","hardDriveSerialNumber":"RPF50ACE3USG57","processorType":"3,5","logicalDiskVolumeSerialNumber":"CA5B7C15","cdromSerial":"NA","timestampUTC":"2018-04-17T06:59:32.659Z","osName":"Microsoft Windows 10 Pro","virtualMachineIdentity":"3CA72742-7CB4-4E01-1ED6-0107973B5E20","osSerialNumber":"00330-80000-00000-AA063","macAddress":"00:50:56:A7:25:2F","processorid":"1FABFBFF000006F2,1FABFBFF000306F2","osVersion":"30.0.16299","osType":"windows","biosSerial":"VMware-42 27 a7 3c b4 7c 01 4e-1e d6 01 07 97 3b 5e 20"},"endpointID":"69c21305-4a58-4433-a968-19120bb58afc","siteID":"50109539","partnerID":"50001794"}</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should validate the "200" as in response</span>
+  
+  <span class="lead-duration duration">135ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-26" class="collapse collapsable-details">
+          <pre>Status OK</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-27" class="collapse collapsable-details">
+          <pre>
+
+Response is :"cb6a1754-1081-426e-b219-e44fb3187522"</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-28">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-28" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+       <a href="PlatformRegression777.html">@PlatformRegression777</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate REST endpoint for Registration POST API-C179500</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-29" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-30">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-30" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-31">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-31" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection establishes with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">324ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-32" class="collapse collapsable-details">
+          <pre><font color="blue"><b>Connection Establish for : 10.2.114.113:22</b></font><br/></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User read data from excel with rowIndex "3"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User fetch registry values of old RMM agent</span>
+  
+  <span class="lead-duration duration">804ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-33" class="collapse collapsable-details">
+          <pre>Member ID is->1234
+Site ID is->50109539
+Reg ID is->53758699</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User fetch AgentCore EndPointID from agentCore config file from tag</span>
+  
+  <span class="lead-duration duration">180ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-34" class="collapse collapsable-details">
+          <pre><font color="blue"><b>EndPoint ID is 69c21305-4a58-4433-a968-19120bb58afc</b></font><br/></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User send a Get request for API endpoint as "/agent/v1/partner/PartnerID/endpoint/EndPointID/registration"</span>
+  
+  <span class="lead-duration duration">11s 001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-35" class="collapse collapsable-details">
+          <pre>I send a Get request for URL https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/registration</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">105ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-36" class="collapse collapsable-details">
+          <pre>Status OK</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-37" class="collapse collapsable-details">
+          <pre>
+
+Response is :{   "endpointID": "69c21305-4a58-4433-a968-19120bb58afc",   "agentID": "69c21305-4a58-4433-a968-19120bb58afc",   "partnerID": "1234",   "siteID": "50109539",   "clientID": "50109539",   "legacyRegID": "53758699",   "installed": true,   "sysInfo": {      "timestamp_utc": "2018-09-21T17:29:05.883Z",      "osType": "windows",      "osName": "Microsoft Windows 7 Professional ",      "osVersion": "6.1.7601",      "osSerialNumber": "00371-220-7340795-06641",      "hostName": "Juno-win7-64",      "macAddress": "00:50:56:A7:7B:69",      "processorid": "1FABFBFF000306F2",      "processorType": "3",      "hardDriveSerialNumber": "",      "memory": "",      "motherboardAdapter": "None",      "cdromSerial": "",      "logicalDiskVolumeSerialNumber": "24856D53,5A1E1E9F,CA383253",      "biosSerial": "VMware-42 27 3c 9f e4 40 cc 17-55 ca 6b 70 03 45 c8 48",      "virtualMachineIdentity": "9F3C2742-40E4-17CC-55CA-6B700345C848",      "systemManufacturerReference": "VMware Virtual Platform",      "mode": "",      "endpointType": "SERVER_VRT1"   },   "publicIPAddress": "125.22.49.114",   "token": "",   "agentInstalledVersion": ""}</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User send a POST request for agent registration API endpoint as "/agent/v1/registration"</span>
+  
+  <span class="lead-duration duration">10s 135ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-38" class="collapse collapsable-details">
+          <pre>I send a Post request for URL https://integration.agent.service.itsupport247.net/agent/v1/registration</pre>
+        </div>
+      </div>
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+                    <a>Output 2</a>
+        </div>
+        <div id="msg-39" class="collapse collapsable-details">
+          <pre>Json format used for post :{"agentID":"69c21305-4a58-4433-a968-19120bb58afc","clientID":"50109539","legacyRegID":"53758699","sysInfo":{"motherboardAdapter":"None","hostName":"win10-32ACT","systemManufacturerReference":"VMware Virtual Platform","memory":"","hardDriveSerialNumber":"RPF50ACE3USG58","processorType":"3,6","logicalDiskVolumeSerialNumber":"CA5B7C15","cdromSerial":"NA","timestampUTC":"2018-04-17T06:59:32.659Z","osName":"Microsoft Windows 10 Pro","virtualMachineIdentity":"3CA72742-7CB4-4E01-1ED6-0107973B5E20","osSerialNumber":"00330-80000-00000-AA063","macAddress":"00:50:56:A7:25:2G","processorid":"1FABFBFF000006F2,1FABFBFF000306F2","osVersion":"40.0.16299","osType":"windows","biosSerial":"VMware-42 27 a7 3c b4 7c 01 4e-1e d6 01 07 97 3b 5e 20"},"endpointID":"69c21305-4a58-4433-a968-19120bb58afc","siteID":"50109539","partnerID":"50001794"}</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should validate the "200" as in response</span>
+  
+  <span class="lead-duration duration">112ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-40" class="collapse collapsable-details">
+          <pre>Status OK</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should fetch response for API</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-41" class="collapse collapsable-details">
+          <pre>
+
+Response is :"8e317d6d-b40e-4aef-994a-872f15688c3c"</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-42">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-42" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+       <a href="PlatformRegression777.html">@PlatformRegression777</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate REST endpoint for Registration POST API-C179500</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-43" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-44">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-44" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-45">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-45" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection establishes with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">457ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-46" class="collapse collapsable-details">
+          <pre><font color="blue"><b>Connection Establish for : 10.2.114.113:22</b></font><br/></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User read data from excel with rowIndex "4"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User fetch registry values of old RMM agent</span>
+  
+  <span class="lead-duration duration">1s 016ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-47" class="collapse collapsable-details">
+          <pre>Member ID is->1234
+Site ID is->50109539
+Reg ID is->53758699</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User fetch AgentCore EndPointID from agentCore config file from tag</span>
+  
+  <span class="lead-duration duration">330ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-48" class="collapse collapsable-details">
+          <pre><font color="blue"><b>EndPoint ID is 69c21305-4a58-4433-a968-19120bb58afc</b></font><br/></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User send a Get request for API endpoint as "/agent/v1/partner/PartnerID/endpoint/EndPointID/registration"</span>
+  
+  <span class="lead-duration duration">11s</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-49">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-49" class="collapse collapsable-details">
+          <pre>I send a Get request for URL https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/registration</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">103ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-50" class="collapse collapsable-details">
+          <pre>Status OK</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-51">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-51" class="collapse collapsable-details">
+          <pre>
+
+Response is :{   "endpointID": "69c21305-4a58-4433-a968-19120bb58afc",   "agentID": "69c21305-4a58-4433-a968-19120bb58afc",   "partnerID": "1234",   "siteID": "50109539",   "clientID": "50109539",   "legacyRegID": "53758699",   "installed": true,   "sysInfo": {      "timestamp_utc": "2018-09-21T17:29:05.883Z",      "osType": "windows",      "osName": "Microsoft Windows 7 Professional ",      "osVersion": "6.1.7601",      "osSerialNumber": "00371-220-7340795-06641",      "hostName": "Juno-win7-64",      "macAddress": "00:50:56:A7:7B:69",      "processorid": "1FABFBFF000306F2",      "processorType": "3",      "hardDriveSerialNumber": "",      "memory": "",      "motherboardAdapter": "None",      "cdromSerial": "",      "logicalDiskVolumeSerialNumber": "24856D53,5A1E1E9F,CA383253",      "biosSerial": "VMware-42 27 3c 9f e4 40 cc 17-55 ca 6b 70 03 45 c8 48",      "virtualMachineIdentity": "9F3C2742-40E4-17CC-55CA-6B700345C848",      "systemManufacturerReference": "VMware Virtual Platform",      "mode": "",      "endpointType": "SERVER_VRT1"   },   "publicIPAddress": "125.22.49.114",   "token": "",   "agentInstalledVersion": ""}</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User send a POST request for agent registration API endpoint as "/agent/v1/registration"</span>
+  
+  <span class="lead-duration duration">10s 154ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-52" class="collapse collapsable-details">
+          <pre>I send a Post request for URL https://integration.agent.service.itsupport247.net/agent/v1/registration</pre>
+        </div>
+      </div>
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-53">
+                    <a>Output 2</a>
+        </div>
+        <div id="msg-53" class="collapse collapsable-details">
+          <pre>Json format used for post :{"agentID":"69c21305-4a58-4433-a968-19120bb58afc","clientID":"50109539","legacyRegID":"53758699","sysInfo":{"motherboardAdapter":"None","hostName":"win10-32ACT","systemManufacturerReference":"VMware Virtual Platform","memory":"","hardDriveSerialNumber":"","processorType":"3,3","logicalDiskVolumeSerialNumber":"CA5B7C15","cdromSerial":"","timestampUTC":"2018-04-17T06:59:32.659Z","osName":"Microsoft Windows 10 Pro","virtualMachineIdentity":"3CA72742-7CB4-4E01-1ED6-0107973B5E20","osSerialNumber":"00330-80000-00000-AA063","macAddress":"00:50:56:A7:25:2F","processorid":"1FABFBFF000006F2,1FABFBFF000306F2","osVersion":"10.0.16299","osType":"windows","biosSerial":"VMware-42 27 a7 3c b4 7c 01 4e-1e d6 01 07 97 3b 5e 20"},"endpointID":"69c21305-4a58-4433-a968-19120bb58afc","siteID":"50109539","partnerID":"50001794"}</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should validate the "200" as in response</span>
+  
+  <span class="lead-duration duration">117ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-54">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-54" class="collapse collapsable-details">
+          <pre>Status OK</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-55" class="collapse collapsable-details">
+          <pre>
+
+Response is :"cb6a1754-1081-426e-b219-e44fb3187522"</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-56">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-56" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

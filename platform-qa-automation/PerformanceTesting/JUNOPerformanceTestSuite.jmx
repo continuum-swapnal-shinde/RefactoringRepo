@@ -1,0 +1,2219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.1" jmeter="3.1 r1770033">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="JUNO Performance Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        <stringProp name="CookieManager.policy">rfc2109</stringProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">false</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Extract Input Data From CSV File" enabled="true">
+        <stringProp name="filename">/home/ubuntu/apache-jmeter-3.1/extras/PerformanceTesting/JunoInputSheet.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames"></stringProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Stress Testing Suite" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1491828780000</longProp>
+        <longProp name="ThreadGroup.end_time">1491829680000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">900</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+          <stringProp name="CounterConfig.start">82940</stringProp>
+          <stringProp name="CounterConfig.end"></stringProp>
+          <stringProp name="CounterConfig.incr">10</stringProp>
+          <stringProp name="CounterConfig.name">heartbeat_counter</stringProp>
+          <stringProp name="CounterConfig.format"></stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname=" Agent Version API(${agentDNS}/agent/version)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/version</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient3.1</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">100.0</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate API Response" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1663275433">AgentServiceSolution</stringProp>
+              <stringProp name="2016261304">Version</stringProp>
+              <stringProp name="-1443578255">Agent Micro-Service</stringProp>
+              <stringProp name="-610266599">Continuum LLC</stringProp>
+              <stringProp name="46670517">1.0.0</stringProp>
+              <stringProp name="0"></stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="Agent MicroService DNS ${agentDNS}" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+          </ConfigTestElement>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Agent HealthCheck API(${agentDNS}/agent/healthCheck)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/healthCheck</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient3.1</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">0</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate API Response" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1663275433">AgentServiceSolution</stringProp>
+              <stringProp name="-270224404">HealthCheck</stringProp>
+              <stringProp name="-1443578255">Agent Micro-Service</stringProp>
+              <stringProp name="-610266599">Continuum LLC</stringProp>
+              <stringProp name="46670517">1.0.0</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Heart Beat API (${agentDNS}/agent/v1/${agentCoreEndPointId}/heartbeat)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/heartbeat</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">100</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Asset Version API (${assetDNS}/asset/version)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${assetDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/asset/version</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient3.1</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">100.0</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate API Resonse" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-249448866">AssetServiceSolution</stringProp>
+              <stringProp name="2016261304">Version</stringProp>
+              <stringProp name="1542762268">Asset Micro-Service</stringProp>
+              <stringProp name="-610266599">Continuum LLC</stringProp>
+              <stringProp name="46670517">1.0.0</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Asset Health Check (${assetDNS}/asset/healthCheck)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${assetDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/asset/healthCheck</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient3.1</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">100.0</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate API Response" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-249448866">AssetServiceSolution</stringProp>
+              <stringProp name="-270224404">HealthCheck</stringProp>
+              <stringProp name="1542762268">Asset Micro-Service</stringProp>
+              <stringProp name="-610266599">Continuum LLC</stringProp>
+              <stringProp name="46670517">1.0.0</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Asset EndPoint API (${assetDNS}/asset/v1/endpoint/${agentCoreEndPointId})" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${assetDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/asset/v1/endpoint/${agentCoreEndPointId}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">100.0</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Performance Version API(${performanceDNS}/performance/version)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${performanceDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/performance/version</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">110.0</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Performance HealthCheck API(${performanceDNS}/performance/healthCheck)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${performanceDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/performance/healthCheck</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">0</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Performance Storage API(${performanceDNS}/performance/v1/endpoint/${agentCoreEndPointId}/storage)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${performanceDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/performance/v1/endpoint/${agentCoreEndPointId}/storage</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">0</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Performance Network API (${performanceDNS}/performance/v1/endpoint/${agentCoreEndPointId}/network)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${performanceDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/performance/v1/endpoint/${agentCoreEndPointId}/network</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">0</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Performance Process API(${performanceDNS}/performance/v1/endpoint/${agentCoreEndPointId}/process)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${performanceDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/performance/v1/endpoint/${agentCoreEndPointId}/process</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">100.0</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Performance Processor API(${performanceDNS}/performance/v1/endpoint/${agentCoreEndPointId}/processor)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${performanceDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/performance/v1/endpoint/${agentCoreEndPointId}/processor</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">100</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Performance Memory(${performanceDNS}/performance/v1/endpoint/${agentCoreEndPointId}/memory)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${performanceDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/performance/v1/endpoint/${agentCoreEndPointId}/memory</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">100</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET - Performance Collection API(${performanceDNS}/performance/v1/endpoint/${agentCoreEndPointId}/performanceCollection)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${performanceDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/performance/v1/endpoint/${agentCoreEndPointId}/performanceCollection</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET - Performance of Specific Processor (${performanceDNS}/performance/v1/endpoint/${agentCoreEndPointId}/processor/0)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${performanceDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/performance/v1/endpoint/${agentCoreEndPointId}/processor/0</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HeartBeat API(${agentDNS}/agent/v1/${agentCoreEndPointId}/heartbeat)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;RegID&quot;: &quot;ee8a86c0-428a-486e-9542-1ccfb4b9680e&quot;,&#xd;
+  &quot;DcDateTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+  &quot;AgentDateTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss:SSS&apos;Z&apos;)}&quot;,&#xd;
+  &quot;HeartbeatCounter&quot;: &quot;${heartbeat_counter}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/heartbeat</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Performance Process(${agentDNS}/agent/v1/${agentCoreEndPointId}/performanceProcess)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+    &quot;createdBy&quot;: &quot;&quot;,&#xd;
+    &quot;name&quot;: &quot;processes&quot;,&#xd;
+    &quot;type&quot;: &quot;performanceProcesses&quot;,&#xd;
+    &quot;processes&quot;: [&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 0,&#xd;
+        &quot;name&quot;: &quot;cdpserver&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0.9,&#xd;
+        &quot;handleCount&quot;: 167,&#xd;
+        &quot;threadCount&quot;: 73,&#xd;
+        &quot;privateBytes&quot;: 416350208&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 1,&#xd;
+        &quot;name&quot;: &quot;jbd2/xvda2-8&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0.1,&#xd;
+        &quot;handleCount&quot;: 0,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 0&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 2,&#xd;
+        &quot;name&quot;: &quot;platform-agent-&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0.1,&#xd;
+        &quot;handleCount&quot;: 16,&#xd;
+        &quot;threadCount&quot;: 11,&#xd;
+        &quot;privateBytes&quot;: 21438464&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 3,&#xd;
+        &quot;name&quot;: &quot;ksoftirqd/0&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0,&#xd;
+        &quot;handleCount&quot;: 0,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 0&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 4,&#xd;
+        &quot;name&quot;: &quot;rcu_sched&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0,&#xd;
+        &quot;handleCount&quot;: 0,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 0&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 5,&#xd;
+        &quot;name&quot;: &quot;kworker/0:0H&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0,&#xd;
+        &quot;handleCount&quot;: 0,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 0&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 6,&#xd;
+        &quot;name&quot;: &quot;r1ctl&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0.1,&#xd;
+        &quot;handleCount&quot;: 11,&#xd;
+        &quot;threadCount&quot;: 10,&#xd;
+        &quot;privateBytes&quot;: 20381696&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 7,&#xd;
+        &quot;name&quot;: &quot;init&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0,&#xd;
+        &quot;handleCount&quot;: 20,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 1581056&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 8,&#xd;
+        &quot;name&quot;: &quot;kthreadd&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0,&#xd;
+        &quot;handleCount&quot;: 0,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 0&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 9,&#xd;
+        &quot;name&quot;: &quot;rcu_bh&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0,&#xd;
+        &quot;handleCount&quot;: 0,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 0&#xd;
+      }&#xd;
+    ]&#xd;
+  }</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/performanceProcess</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Performance Processor(${agentDNS}/agent/v1/${agentCoreEndPointId}/performanceProcessor)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+    &quot;createdBy&quot;: &quot;&quot;,&#xd;
+    &quot;index&quot;: 0,&#xd;
+    &quot;name&quot;: &quot;processor&quot;,&#xd;
+    &quot;type&quot;: &quot;performanceProcessors&quot;,&#xd;
+    &quot;metric&quot;: {&#xd;
+      &quot;numOfProcesses&quot;: 134,&#xd;
+      &quot;percentIOTime&quot;: 0,&#xd;
+      &quot;percentIdleTime&quot;: 0,&#xd;
+      &quot;percentInterruptTime&quot;: 0,&#xd;
+      &quot;percentSystemTime&quot;: 0,&#xd;
+      &quot;percentUserTime&quot;: 0,&#xd;
+      &quot;percentUtil&quot;: 0,&#xd;
+      &quot;interruptsPerSec&quot;: 0&#xd;
+    },&#xd;
+    &quot;cpus&quot;: [&#xd;
+      {&#xd;
+        &quot;cores&quot;: [&#xd;
+          {&#xd;
+            &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+            &quot;createdBy&quot;: &quot;&quot;,&#xd;
+            &quot;index&quot;: 0,&#xd;
+           &quot;name&quot;: &quot;&quot;,&#xd;
+            &quot;metric&quot;: {&#xd;
+              &quot;numOfProcesses&quot;: 0,&#xd;
+              &quot;percentIOTime&quot;: 1,&#xd;
+              &quot;percentIdleTime&quot;: 98,&#xd;
+              &quot;percentInterruptTime&quot;: 0,&#xd;
+              &quot;percentSystemTime&quot;: 0,&#xd;
+              &quot;percentUserTime&quot;: 0.5,&#xd;
+              &quot;percentUtil&quot;: 0,&#xd;
+              &quot;interruptsPerSec&quot;: 0&#xd;
+            },&#xd;
+            &quot;type&quot;: &quot;performanceProcessorCore&quot;&#xd;
+          },&#xd;
+          {&#xd;
+            &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+            &quot;createdBy&quot;: &quot;&quot;,&#xd;
+            &quot;index&quot;: 1,&#xd;
+            &quot;name&quot;: &quot;&quot;,&#xd;
+            &quot;metric&quot;: {&#xd;
+              &quot;numOfProcesses&quot;: 0,&#xd;
+              &quot;percentIOTime&quot;: 0.5,&#xd;
+              &quot;percentIdleTime&quot;: 99.49,&#xd;
+              &quot;percentInterruptTime&quot;: 0,&#xd;
+              &quot;percentSystemTime&quot;: 0,&#xd;
+              &quot;percentUserTime&quot;: 0,&#xd;
+              &quot;percentUtil&quot;: 0,&#xd;
+              &quot;interruptsPerSec&quot;: 0&#xd;
+            },&#xd;
+            &quot;type&quot;: &quot;performanceProcessorCore&quot;&#xd;
+          }&#xd;
+        ],&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 0,&#xd;
+        &quot;name&quot;: &quot;&quot;,&#xd;
+        &quot;numOfCores&quot;: 2,&#xd;
+        &quot;metric&quot;: {&#xd;
+          &quot;numOfProcesses&quot;: 0,&#xd;
+          &quot;percentIOTime&quot;: 0.99,&#xd;
+          &quot;percentIdleTime&quot;: 98.25,&#xd;
+          &quot;percentInterruptTime&quot;: 0,&#xd;
+          &quot;percentSystemTime&quot;: 0.24,&#xd;
+          &quot;percentUserTime&quot;: 0.49,&#xd;
+          &quot;percentUtil&quot;: 0,&#xd;
+          &quot;interruptsPerSec&quot;: 0&#xd;
+        },&#xd;
+        &quot;processorQueueLength&quot;: 0,&#xd;
+        &quot;type&quot;: &quot;performanceProcessor&quot;&#xd;
+      }&#xd;
+    ]&#xd;
+  }</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/performanceProcessor</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Performance Network(${agentDNS}/agent/v1/${agentCoreEndPointId}/performanceNetwork)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+    &quot;createdBy&quot;: &quot;&quot;,&#xd;
+    &quot;index&quot;: 0,&#xd;
+    &quot;name&quot;: &quot;network&quot;,&#xd;
+    &quot;type&quot;: &quot;performanceNetwork&quot;,&#xd;
+    &quot;interface&quot;: [&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 0,&#xd;
+        &quot;name&quot;: &quot;eth0&quot;,&#xd;
+        &quot;type&quot;: &quot;performanceNetworkInterface&quot;,&#xd;
+        &quot;receivedBytes&quot;: 49098762240,&#xd;
+        &quot;transmittedBytes&quot;: 8009786002,&#xd;
+        &quot;txQueueLength&quot;: 0,&#xd;
+        &quot;rxQueueLength&quot;: 0&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 1,&#xd;
+        &quot;name&quot;: &quot;lo&quot;,&#xd;
+        &quot;type&quot;: &quot;performanceNetworkInterface&quot;,&#xd;
+        &quot;receivedBytes&quot;: 694938874,&#xd;
+        &quot;transmittedBytes&quot;: 694938874,&#xd;
+        &quot;txQueueLength&quot;: 0,&#xd;
+        &quot;rxQueueLength&quot;: 684&#xd;
+      }&#xd;
+    ]&#xd;
+  }</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/performanceNetwork</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Performance Memory(${agentDNS}/agent/v1/${agentCoreEndPointId}/performanceMemory)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+    &quot;createdBy&quot;: &quot;&quot;,&#xd;
+    &quot;index&quot;: 0,&#xd;
+    &quot;name&quot;: &quot;memory&quot;,&#xd;
+    &quot;type&quot;: &quot;performanceMemory&quot;,&#xd;
+    &quot;physicalTotalBytes&quot;: 8370139136,&#xd;
+    &quot;physicalInUseBytes&quot;: 840183808,&#xd;
+    &quot;physicalAvailableBytes&quot;: 7529955328,&#xd;
+    &quot;virtualTotalBytes&quot;: 1070592000,&#xd;
+    &quot;virtualInUseBytes&quot;: 0,&#xd;
+    &quot;virtualAvailableBytes&quot;: 1070592000,&#xd;
+    &quot;percentCommittedInUseBytes&quot;: 0,&#xd;
+    &quot;committedBytes&quot;: 5255659520,&#xd;
+    &quot;freeSystemPageTableEntriesBytes&quot;: 5234688,&#xd;
+    &quot;poolNonPagedBytes&quot;: 0,&#xd;
+    &quot;pagesPerSecondBytes&quot;: 0&#xd;
+  }</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/performanceMemory</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Performance Storage(${agentDNS}/agent/v1/${agentCoreEndPointId}/performanceStorage)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+    &quot;createdBy&quot;: &quot;&quot;,&#xd;
+    &quot;name&quot;: &quot;storage&quot;,&#xd;
+    &quot;type&quot;: &quot;performanceStorages&quot;,&#xd;
+    &quot;storages&quot;: [&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 0,&#xd;
+        &quot;name&quot;: &quot;xvda&quot;,&#xd;
+        &quot;type&quot;: &quot;performanceStorage&quot;,&#xd;
+        &quot;metric&quot;: {&#xd;
+          &quot;idleTime&quot;: 0,&#xd;
+          &quot;writeCompleted&quot;: 119343552,&#xd;
+          &quot;writeTimeMs&quot;: 148547920,&#xd;
+          &quot;readCompleted&quot;: 23562,&#xd;
+          &quot;readTimeMs&quot;: 79056,&#xd;
+          &quot;freeSpaceBytes&quot;: 0,&#xd;
+          &quot;usedSpaceBytes&quot;: 0,&#xd;
+          &quot;totalSpaceBytes&quot;: 0,&#xd;
+          &quot;diskTimeTotal&quot;: 141437980&#xd;
+        },&#xd;
+        &quot;partitions&quot;: [&#xd;
+          {&#xd;
+            &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+            &quot;createdBy&quot;: &quot;&quot;,&#xd;
+            &quot;index&quot;: 0,&#xd;
+           &quot;name&quot;: &quot;xvda1&quot;,&#xd;
+            &quot;type&quot;: &quot;performanceStoragePartition&quot;,&#xd;
+            &quot;metric&quot;: {&#xd;
+              &quot;idleTime&quot;: 0,&#xd;
+              &quot;writeCompleted&quot;: 0,&#xd;
+              &quot;writeTimeMs&quot;: 0,&#xd;
+              &quot;readCompleted&quot;: 27,&#xd;
+              &quot;readTimeMs&quot;: 8,&#xd;
+              &quot;freeSpaceBytes&quot;: 0,&#xd;
+              &quot;usedSpaceBytes&quot;: 0,&#xd;
+              &quot;totalSpaceBytes&quot;: 0,&#xd;
+              &quot;diskTimeTotal&quot;: 8&#xd;
+            }&#xd;
+          },&#xd;
+          {&#xd;
+            &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+            &quot;createdBy&quot;: &quot;&quot;,&#xd;
+            &quot;index&quot;: 1,&#xd;
+            &quot;name&quot;: &quot;xvda2&quot;,&#xd;
+            &quot;type&quot;: &quot;performanceStoragePartition&quot;,&#xd;
+            &quot;metric&quot;: {&#xd;
+              &quot;idleTime&quot;: 0,&#xd;
+              &quot;writeCompleted&quot;: 119343552,&#xd;
+              &quot;writeTimeMs&quot;: 148547920,&#xd;
+              &quot;readCompleted&quot;: 23177,&#xd;
+              &quot;readTimeMs&quot;: 78924,&#xd;
+              &quot;freeSpaceBytes&quot;: 0,&#xd;
+              &quot;usedSpaceBytes&quot;: 0,&#xd;
+              &quot;totalSpaceBytes&quot;: 0,&#xd;
+              &quot;diskTimeTotal&quot;: 141437904&#xd;
+            }&#xd;
+          },&#xd;
+          {&#xd;
+            &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+            &quot;createdBy&quot;: &quot;&quot;,&#xd;
+            &quot;index&quot;: 2,&#xd;
+            &quot;name&quot;: &quot;xvda3&quot;,&#xd;
+            &quot;type&quot;: &quot;performanceStoragePartition&quot;,&#xd;
+            &quot;metric&quot;: {&#xd;
+              &quot;idleTime&quot;: 0,&#xd;
+              &quot;writeCompleted&quot;: 0,&#xd;
+              &quot;writeTimeMs&quot;: 0,&#xd;
+              &quot;readCompleted&quot;: 169,&#xd;
+              &quot;readTimeMs&quot;: 60,&#xd;
+              &quot;freeSpaceBytes&quot;: 0,&#xd;
+              &quot;usedSpaceBytes&quot;: 0,&#xd;
+              &quot;totalSpaceBytes&quot;: 0,&#xd;
+              &quot;diskTimeTotal&quot;: 60&#xd;
+            }&#xd;
+          }&#xd;
+        ]&#xd;
+      }&#xd;
+    ]&#xd;
+  }</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/performanceStorage</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Errors(${agentDNS}/agent/v1/${agentCoreEndPointId}/errors)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+ &quot;Name&quot;: &quot;errorMessage&quot;,&#xd;
+ &quot;Type&quot;: &quot;resource&quot;,&#xd;
+ &quot;Version&quot;: &quot;2.0&quot;,&#xd;
+  &quot;TimeUUID&quot;: &quot;&quot;,  &#xd;
+ &quot;TimestampUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+ &quot;Path&quot;: &quot;/sample/path&quot;,&#xd;
+ &quot;ErrorTrace&quot;: &quot;Sample error trace&quot;,&#xd;
+ &quot;StatusCode&quot;: 400,&#xd;
+ &quot;ErrorCode&quot;: &quot;Sample error code&quot;,&#xd;
+ &quot;ErrorData&quot;: {&#xd;
+  &quot;Key1&quot;: &quot;Value1&quot;,&#xd;
+  &quot;Key2&quot;: &quot;Value2&quot;&#xd;
+ }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/errors</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST asset(${agentDNS}/agent/v1/${agentCoreEndPointId}/asset)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+  &quot;createdBy&quot;: &quot;/continuum/agent/plugin/asset&quot;,&#xd;
+  &quot;name&quot;: &quot;asset&quot;,&#xd;
+  &quot;type&quot;: &quot;assetCollection&quot;,&#xd;
+  &quot;baseBoard&quot;: {&#xd;
+    &quot;product&quot;: &quot;&quot;,&#xd;
+    &quot;manufacturer&quot;: &quot;&quot;,&#xd;
+    &quot;model&quot;: &quot;&quot;,&#xd;
+    &quot;serialNumber&quot;: &quot;&quot;,&#xd;
+    &quot;version&quot;: &quot;&quot;,&#xd;
+    &quot;name&quot;: &quot;&quot;,&#xd;
+    &quot;installDate&quot;: &quot;0001-01-01T00:00:00Z&quot;&#xd;
+  },&#xd;
+  &quot;bios&quot;: {&#xd;
+    &quot;product&quot;: &quot;&quot;,&#xd;
+    &quot;manufacturer&quot;: &quot;Xen&quot;,&#xd;
+    &quot;version&quot;: &quot;4.2.amazon&quot;,&#xd;
+    &quot;serialNumber&quot;: &quot;&quot;,&#xd;
+    &quot;smbiosVersion&quot;: &quot;SMBIOS version 2.4&quot;&#xd;
+  },&#xd;
+  &quot;drives&quot;: null,&#xd;
+  &quot;memory&quot;: {&#xd;
+    &quot;totalPhysicalMemoryBytes&quot;: 8370139136,&#xd;
+    &quot;totalVirtualMemoryBytes&quot;: 9440731136,&#xd;
+    &quot;availableVirtualMemoryBytes&quot;: 6170787840,&#xd;
+    &quot;availablePhysicalMemoryBytes&quot;: 5100195840,&#xd;
+    &quot;totalPageFileSpaceBytes&quot;: 1070592000,&#xd;
+    &quot;availablePageFileSpaceBytes&quot;: 1070592000&#xd;
+  },&#xd;
+  &quot;networks&quot;: [&#xd;
+    {&#xd;
+      &quot;vendor&quot;: &quot;&quot;,&#xd;
+      &quot;product&quot;: &quot;&quot;,&#xd;
+      &quot;dhcpEnabled&quot;: false,&#xd;
+      &quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+      &quot;dnsServers&quot;: null,&#xd;
+      &quot;ipv4&quot;: &quot;127.0.0.1&quot;,&#xd;
+      &quot;ipv6&quot;: &quot;::&quot;,&#xd;
+      &quot;subnetMask&quot;: &quot;255.0.0.0&quot;,&#xd;
+      &quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+      &quot;macAddress&quot;: &quot;&quot;,&#xd;
+      &quot;logicalName&quot;: &quot;lo&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;vendor&quot;: &quot;&quot;,&#xd;
+      &quot;product&quot;: &quot;&quot;,&#xd;
+      &quot;dhcpEnabled&quot;: false,&#xd;
+      &quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+      &quot;dnsServers&quot;: null,&#xd;
+      &quot;ipv4&quot;: &quot;172.28.5.92&quot;,&#xd;
+      &quot;ipv6&quot;: &quot;::&quot;,&#xd;
+      &quot;subnetMask&quot;: &quot;255.255.252.0&quot;,&#xd;
+      &quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+      &quot;macAddress&quot;: &quot;06:ae:de:56:26:d0&quot;,&#xd;
+      &quot;logicalName&quot;: &quot;eth0&quot;&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;os&quot;: {&#xd;
+    &quot;product&quot;: &quot;Ubuntu&quot;,&#xd;
+    &quot;manufacturer&quot;: &quot;Ubuntu 14.04.5 LTS&quot;,&#xd;
+    &quot;osLanguage&quot;: &quot;en_US&quot;,&#xd;
+    &quot;serialNumber&quot;: &quot;&quot;,&#xd;
+    &quot;version&quot;: &quot;14.04&quot;,&#xd;
+    &quot;installDate&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+    &quot;type&quot;: &quot;&quot;,&#xd;
+    &quot;arch&quot;: &quot;&quot;&#xd;
+  },&#xd;
+  &quot;processors&quot;: [&#xd;
+    {&#xd;
+      &quot;product&quot;: &quot;Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz&quot;,&#xd;
+      &quot;numberOfCores&quot;: 2,&#xd;
+      &quot;clockSpeedMhz&quot;: 2400.058,&#xd;
+      &quot;family&quot;: 6,&#xd;
+      &quot;manufacturer&quot;: &quot;GenuineIntel&quot;,&#xd;
+      &quot;processorType&quot;: &quot;x86_64&quot;,&#xd;
+      &quot;serialNumber&quot;: &quot;&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;product&quot;: &quot;Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz&quot;,&#xd;
+      &quot;numberOfCores&quot;: 2,&#xd;
+      &quot;clockSpeedMhz&quot;: 2400.058,&#xd;
+      &quot;family&quot;: 6,&#xd;
+      &quot;manufacturer&quot;: &quot;GenuineIntel&quot;,&#xd;
+      &quot;processorType&quot;: &quot;x86_64&quot;,&#xd;
+      &quot;serialNumber&quot;: &quot;&quot;&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;raidController&quot;: {&#xd;
+    &quot;softwareRaid&quot;: &quot;&quot;,&#xd;
+    &quot;hardwareRaid&quot;: &quot;&quot;,&#xd;
+    &quot;vendor&quot;: &quot;&quot;&#xd;
+  },&#xd;
+  &quot;system&quot;: {&#xd;
+    &quot;product&quot;: &quot;HVM domU ()&quot;,&#xd;
+    &quot;model&quot;: &quot;&quot;,&#xd;
+    &quot;timeZone&quot;: &quot;+0530&quot;,&#xd;
+    &quot;timeZoneDescription&quot;: &quot;IST&quot;,&#xd;
+    &quot;serialNumber&quot;: &quot;ec2ca9c0-8dbe-8c44-d7ea-5d0a0f20ed2d&quot;,&#xd;
+    &quot;systemName&quot;: &quot;3fb4c489-64e4-42e6-82a2-edf53bb72535&quot;,&#xd;
+    &quot;category&quot;: &quot;&quot;&#xd;
+  }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/asset</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">3000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Heart-Beat Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${__P(USERS,1)}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1492070271000</longProp>
+        <longProp name="ThreadGroup.end_time">1492070271000</longProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(DURATION,60)}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="HeartBeat Counter" enabled="true">
+          <stringProp name="CounterConfig.start">82940</stringProp>
+          <stringProp name="CounterConfig.end"></stringProp>
+          <stringProp name="CounterConfig.incr">10</stringProp>
+          <stringProp name="CounterConfig.name">heartbeat_counter</stringProp>
+          <stringProp name="CounterConfig.format"></stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+          <stringProp name="TestPlan.comments">Counter To Increase the HeatBeat by 10</stringProp>
+        </CounterConfig>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HeartBeat API(${agentDNS}/agent/v1/${agentCoreEndPointId}/heartbeat)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;RegID&quot;: &quot;${agentCoreEndPointId}&quot;,&#xd;
+  &quot;DcDateTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+  &quot;AgentDateTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+  &quot;HeartbeatCounter&quot;: ${heartbeat_counter}&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/heartbeat</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">3000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Broker Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${__P(USERS,1)}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1492074590000</longProp>
+        <longProp name="ThreadGroup.end_time">1492074590000</longProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(DURATION,60)}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Performance Memory(${agentDNS}/agent/v1/${agentCoreEndPointId}/performanceMemory)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+    &quot;createdBy&quot;: &quot;&quot;,&#xd;
+    &quot;index&quot;: 0,&#xd;
+    &quot;name&quot;: &quot;memory&quot;,&#xd;
+    &quot;type&quot;: &quot;performanceMemory&quot;,&#xd;
+    &quot;physicalTotalBytes&quot;: 8370139136,&#xd;
+    &quot;physicalInUseBytes&quot;: 840183808,&#xd;
+    &quot;physicalAvailableBytes&quot;: 7529955328,&#xd;
+    &quot;virtualTotalBytes&quot;: 1070592000,&#xd;
+    &quot;virtualInUseBytes&quot;: 0,&#xd;
+    &quot;virtualAvailableBytes&quot;: 1070592000,&#xd;
+    &quot;percentCommittedInUseBytes&quot;: 0,&#xd;
+    &quot;committedBytes&quot;: 5255659520,&#xd;
+    &quot;freeSystemPageTableEntriesBytes&quot;: 5234688,&#xd;
+    &quot;poolNonPagedBytes&quot;: 0,&#xd;
+    &quot;pagesPerSecondBytes&quot;: 0&#xd;
+  }</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/performanceMemory</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">15000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Performance Network(${agentDNS}/agent/v1/${agentCoreEndPointId}/performanceNetwork)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+    &quot;createdBy&quot;: &quot;&quot;,&#xd;
+    &quot;index&quot;: 0,&#xd;
+    &quot;name&quot;: &quot;network&quot;,&#xd;
+    &quot;type&quot;: &quot;performanceNetwork&quot;,&#xd;
+    &quot;interface&quot;: [&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 0,&#xd;
+        &quot;name&quot;: &quot;eth0&quot;,&#xd;
+        &quot;type&quot;: &quot;performanceNetworkInterface&quot;,&#xd;
+        &quot;receivedBytes&quot;: 49098762240,&#xd;
+        &quot;transmittedBytes&quot;: 8009786002,&#xd;
+        &quot;txQueueLength&quot;: 0,&#xd;
+        &quot;rxQueueLength&quot;: 0&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 1,&#xd;
+        &quot;name&quot;: &quot;lo&quot;,&#xd;
+        &quot;type&quot;: &quot;performanceNetworkInterface&quot;,&#xd;
+        &quot;receivedBytes&quot;: 694938874,&#xd;
+        &quot;transmittedBytes&quot;: 694938874,&#xd;
+        &quot;txQueueLength&quot;: 0,&#xd;
+        &quot;rxQueueLength&quot;: 684&#xd;
+      }&#xd;
+    ]&#xd;
+  }</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/performanceNetwork</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Performance Processor(${agentDNS}/agent/v1/${agentCoreEndPointId}/performanceProcessor)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+    &quot;createdBy&quot;: &quot;&quot;,&#xd;
+    &quot;index&quot;: 0,&#xd;
+    &quot;name&quot;: &quot;processor&quot;,&#xd;
+    &quot;type&quot;: &quot;performanceProcessors&quot;,&#xd;
+    &quot;metric&quot;: {&#xd;
+      &quot;numOfProcesses&quot;: 134,&#xd;
+      &quot;percentIOTime&quot;: 0,&#xd;
+      &quot;percentIdleTime&quot;: 0,&#xd;
+      &quot;percentInterruptTime&quot;: 0,&#xd;
+      &quot;percentSystemTime&quot;: 0,&#xd;
+      &quot;percentUserTime&quot;: 0,&#xd;
+      &quot;percentUtil&quot;: 0,&#xd;
+      &quot;interruptsPerSec&quot;: 0&#xd;
+    },&#xd;
+    &quot;cpus&quot;: [&#xd;
+      {&#xd;
+        &quot;cores&quot;: [&#xd;
+          {&#xd;
+            &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+            &quot;createdBy&quot;: &quot;&quot;,&#xd;
+            &quot;index&quot;: 0,&#xd;
+           &quot;name&quot;: &quot;&quot;,&#xd;
+            &quot;metric&quot;: {&#xd;
+              &quot;numOfProcesses&quot;: 0,&#xd;
+              &quot;percentIOTime&quot;: 1,&#xd;
+              &quot;percentIdleTime&quot;: 98,&#xd;
+              &quot;percentInterruptTime&quot;: 0,&#xd;
+              &quot;percentSystemTime&quot;: 0,&#xd;
+              &quot;percentUserTime&quot;: 0.5,&#xd;
+              &quot;percentUtil&quot;: 0,&#xd;
+              &quot;interruptsPerSec&quot;: 0&#xd;
+            },&#xd;
+            &quot;type&quot;: &quot;performanceProcessorCore&quot;&#xd;
+          },&#xd;
+          {&#xd;
+            &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+            &quot;createdBy&quot;: &quot;&quot;,&#xd;
+            &quot;index&quot;: 1,&#xd;
+            &quot;name&quot;: &quot;&quot;,&#xd;
+            &quot;metric&quot;: {&#xd;
+              &quot;numOfProcesses&quot;: 0,&#xd;
+              &quot;percentIOTime&quot;: 0.5,&#xd;
+              &quot;percentIdleTime&quot;: 99.49,&#xd;
+              &quot;percentInterruptTime&quot;: 0,&#xd;
+              &quot;percentSystemTime&quot;: 0,&#xd;
+              &quot;percentUserTime&quot;: 0,&#xd;
+              &quot;percentUtil&quot;: 0,&#xd;
+              &quot;interruptsPerSec&quot;: 0&#xd;
+            },&#xd;
+            &quot;type&quot;: &quot;performanceProcessorCore&quot;&#xd;
+          }&#xd;
+        ],&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 0,&#xd;
+        &quot;name&quot;: &quot;&quot;,&#xd;
+        &quot;numOfCores&quot;: 2,&#xd;
+        &quot;metric&quot;: {&#xd;
+          &quot;numOfProcesses&quot;: 0,&#xd;
+          &quot;percentIOTime&quot;: 0.99,&#xd;
+          &quot;percentIdleTime&quot;: 98.25,&#xd;
+          &quot;percentInterruptTime&quot;: 0,&#xd;
+          &quot;percentSystemTime&quot;: 0.24,&#xd;
+          &quot;percentUserTime&quot;: 0.49,&#xd;
+          &quot;percentUtil&quot;: 0,&#xd;
+          &quot;interruptsPerSec&quot;: 0&#xd;
+        },&#xd;
+        &quot;processorQueueLength&quot;: 0,&#xd;
+        &quot;type&quot;: &quot;performanceProcessor&quot;&#xd;
+      }&#xd;
+    ]&#xd;
+  }</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/performanceProcessor</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Performance Process(${agentDNS}/agent/v1/${agentCoreEndPointId}/performanceProcess)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+    &quot;createdBy&quot;: &quot;&quot;,&#xd;
+    &quot;name&quot;: &quot;processes&quot;,&#xd;
+    &quot;type&quot;: &quot;performanceProcesses&quot;,&#xd;
+    &quot;processes&quot;: [&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 0,&#xd;
+        &quot;name&quot;: &quot;cdpserver&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0.9,&#xd;
+        &quot;handleCount&quot;: 167,&#xd;
+        &quot;threadCount&quot;: 73,&#xd;
+        &quot;privateBytes&quot;: 416350208&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 1,&#xd;
+        &quot;name&quot;: &quot;jbd2/xvda2-8&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0.1,&#xd;
+        &quot;handleCount&quot;: 0,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 0&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 2,&#xd;
+        &quot;name&quot;: &quot;platform-agent-&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0.1,&#xd;
+        &quot;handleCount&quot;: 16,&#xd;
+        &quot;threadCount&quot;: 11,&#xd;
+        &quot;privateBytes&quot;: 21438464&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 3,&#xd;
+        &quot;name&quot;: &quot;ksoftirqd/0&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0,&#xd;
+        &quot;handleCount&quot;: 0,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 0&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 4,&#xd;
+        &quot;name&quot;: &quot;rcu_sched&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0,&#xd;
+        &quot;handleCount&quot;: 0,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 0&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 5,&#xd;
+        &quot;name&quot;: &quot;kworker/0:0H&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0,&#xd;
+        &quot;handleCount&quot;: 0,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 0&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 6,&#xd;
+        &quot;name&quot;: &quot;r1ctl&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0.1,&#xd;
+        &quot;handleCount&quot;: 11,&#xd;
+        &quot;threadCount&quot;: 10,&#xd;
+        &quot;privateBytes&quot;: 20381696&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 7,&#xd;
+        &quot;name&quot;: &quot;init&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0,&#xd;
+        &quot;handleCount&quot;: 20,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 1581056&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 8,&#xd;
+        &quot;name&quot;: &quot;kthreadd&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0,&#xd;
+        &quot;handleCount&quot;: 0,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 0&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 9,&#xd;
+        &quot;name&quot;: &quot;rcu_bh&quot;,&#xd;
+        &quot;processID&quot;: 9999,&#xd;
+        &quot;type&quot;: &quot;performanceProcess&quot;,&#xd;
+        &quot;percentCPUUsage&quot;: 0,&#xd;
+        &quot;handleCount&quot;: 0,&#xd;
+        &quot;threadCount&quot;: 1,&#xd;
+        &quot;privateBytes&quot;: 0&#xd;
+      }&#xd;
+    ]&#xd;
+  }</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/performanceProcess</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Performance Storage(${agentDNS}/agent/v1/${agentCoreEndPointId}/performanceStorage)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+    &quot;createdBy&quot;: &quot;&quot;,&#xd;
+    &quot;name&quot;: &quot;storage&quot;,&#xd;
+    &quot;type&quot;: &quot;performanceStorages&quot;,&#xd;
+    &quot;storages&quot;: [&#xd;
+      {&#xd;
+        &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+        &quot;createdBy&quot;: &quot;&quot;,&#xd;
+        &quot;index&quot;: 0,&#xd;
+        &quot;name&quot;: &quot;xvda&quot;,&#xd;
+        &quot;type&quot;: &quot;performanceStorage&quot;,&#xd;
+        &quot;metric&quot;: {&#xd;
+          &quot;idleTime&quot;: 0,&#xd;
+          &quot;writeCompleted&quot;: 119343552,&#xd;
+          &quot;writeTimeMs&quot;: 148547920,&#xd;
+          &quot;readCompleted&quot;: 23562,&#xd;
+          &quot;readTimeMs&quot;: 79056,&#xd;
+          &quot;freeSpaceBytes&quot;: 0,&#xd;
+          &quot;usedSpaceBytes&quot;: 0,&#xd;
+          &quot;totalSpaceBytes&quot;: 0,&#xd;
+          &quot;diskTimeTotal&quot;: 141437980&#xd;
+        },&#xd;
+        &quot;partitions&quot;: [&#xd;
+          {&#xd;
+            &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+            &quot;createdBy&quot;: &quot;&quot;,&#xd;
+            &quot;index&quot;: 0,&#xd;
+           &quot;name&quot;: &quot;xvda1&quot;,&#xd;
+            &quot;type&quot;: &quot;performanceStoragePartition&quot;,&#xd;
+            &quot;metric&quot;: {&#xd;
+              &quot;idleTime&quot;: 0,&#xd;
+              &quot;writeCompleted&quot;: 0,&#xd;
+              &quot;writeTimeMs&quot;: 0,&#xd;
+              &quot;readCompleted&quot;: 27,&#xd;
+              &quot;readTimeMs&quot;: 8,&#xd;
+              &quot;freeSpaceBytes&quot;: 0,&#xd;
+              &quot;usedSpaceBytes&quot;: 0,&#xd;
+              &quot;totalSpaceBytes&quot;: 0,&#xd;
+              &quot;diskTimeTotal&quot;: 8&#xd;
+            }&#xd;
+          },&#xd;
+          {&#xd;
+            &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+            &quot;createdBy&quot;: &quot;&quot;,&#xd;
+            &quot;index&quot;: 1,&#xd;
+            &quot;name&quot;: &quot;xvda2&quot;,&#xd;
+            &quot;type&quot;: &quot;performanceStoragePartition&quot;,&#xd;
+            &quot;metric&quot;: {&#xd;
+              &quot;idleTime&quot;: 0,&#xd;
+              &quot;writeCompleted&quot;: 119343552,&#xd;
+              &quot;writeTimeMs&quot;: 148547920,&#xd;
+              &quot;readCompleted&quot;: 23177,&#xd;
+              &quot;readTimeMs&quot;: 78924,&#xd;
+              &quot;freeSpaceBytes&quot;: 0,&#xd;
+              &quot;usedSpaceBytes&quot;: 0,&#xd;
+              &quot;totalSpaceBytes&quot;: 0,&#xd;
+              &quot;diskTimeTotal&quot;: 141437904&#xd;
+            }&#xd;
+          },&#xd;
+          {&#xd;
+            &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+            &quot;createdBy&quot;: &quot;&quot;,&#xd;
+            &quot;index&quot;: 2,&#xd;
+            &quot;name&quot;: &quot;xvda3&quot;,&#xd;
+            &quot;type&quot;: &quot;performanceStoragePartition&quot;,&#xd;
+            &quot;metric&quot;: {&#xd;
+              &quot;idleTime&quot;: 0,&#xd;
+              &quot;writeCompleted&quot;: 0,&#xd;
+              &quot;writeTimeMs&quot;: 0,&#xd;
+              &quot;readCompleted&quot;: 169,&#xd;
+              &quot;readTimeMs&quot;: 60,&#xd;
+              &quot;freeSpaceBytes&quot;: 0,&#xd;
+              &quot;usedSpaceBytes&quot;: 0,&#xd;
+              &quot;totalSpaceBytes&quot;: 0,&#xd;
+              &quot;diskTimeTotal&quot;: 60&#xd;
+            }&#xd;
+          }&#xd;
+        ]&#xd;
+      }&#xd;
+    ]&#xd;
+  }</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/performanceStorage</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Errors(${agentDNS}/agent/v1/${agentCoreEndPointId}/errors)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+ &quot;Name&quot;: &quot;errorMessage&quot;,&#xd;
+ &quot;Type&quot;: &quot;resource&quot;,&#xd;
+ &quot;Version&quot;: &quot;2.0&quot;,&#xd;
+  &quot;TimeUUID&quot;: &quot;&quot;,  &#xd;
+ &quot;TimestampUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+ &quot;Path&quot;: &quot;/sample/path&quot;,&#xd;
+ &quot;ErrorTrace&quot;: &quot;Sample error trace&quot;,&#xd;
+ &quot;StatusCode&quot;: 400,&#xd;
+ &quot;ErrorCode&quot;: &quot;Sample error code&quot;,&#xd;
+ &quot;ErrorData&quot;: {&#xd;
+  &quot;Key1&quot;: &quot;Value1&quot;,&#xd;
+  &quot;Key2&quot;: &quot;Value2&quot;&#xd;
+ }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/errors</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST asset(${agentDNS}/agent/v1/${agentCoreEndPointId}/asset)" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+  &quot;createdBy&quot;: &quot;/continuum/agent/plugin/asset&quot;,&#xd;
+  &quot;name&quot;: &quot;asset&quot;,&#xd;
+  &quot;type&quot;: &quot;assetCollection&quot;,&#xd;
+  &quot;baseBoard&quot;: {&#xd;
+    &quot;product&quot;: &quot;&quot;,&#xd;
+    &quot;manufacturer&quot;: &quot;&quot;,&#xd;
+    &quot;model&quot;: &quot;&quot;,&#xd;
+    &quot;serialNumber&quot;: &quot;&quot;,&#xd;
+    &quot;version&quot;: &quot;&quot;,&#xd;
+    &quot;name&quot;: &quot;&quot;,&#xd;
+    &quot;installDate&quot;: &quot;0001-01-01T00:00:00Z&quot;&#xd;
+  },&#xd;
+  &quot;bios&quot;: {&#xd;
+    &quot;product&quot;: &quot;&quot;,&#xd;
+    &quot;manufacturer&quot;: &quot;Xen&quot;,&#xd;
+    &quot;version&quot;: &quot;4.2.amazon&quot;,&#xd;
+    &quot;serialNumber&quot;: &quot;&quot;,&#xd;
+    &quot;smbiosVersion&quot;: &quot;SMBIOS version 2.4&quot;&#xd;
+  },&#xd;
+  &quot;drives&quot;: null,&#xd;
+  &quot;memory&quot;: {&#xd;
+    &quot;totalPhysicalMemoryBytes&quot;: 8370139136,&#xd;
+    &quot;totalVirtualMemoryBytes&quot;: 9440731136,&#xd;
+    &quot;availableVirtualMemoryBytes&quot;: 6170787840,&#xd;
+    &quot;availablePhysicalMemoryBytes&quot;: 5100195840,&#xd;
+    &quot;totalPageFileSpaceBytes&quot;: 1070592000,&#xd;
+    &quot;availablePageFileSpaceBytes&quot;: 1070592000&#xd;
+  },&#xd;
+  &quot;networks&quot;: [&#xd;
+    {&#xd;
+      &quot;vendor&quot;: &quot;&quot;,&#xd;
+      &quot;product&quot;: &quot;&quot;,&#xd;
+      &quot;dhcpEnabled&quot;: false,&#xd;
+      &quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+      &quot;dnsServers&quot;: null,&#xd;
+      &quot;ipv4&quot;: &quot;127.0.0.1&quot;,&#xd;
+      &quot;ipv6&quot;: &quot;::&quot;,&#xd;
+      &quot;subnetMask&quot;: &quot;255.0.0.0&quot;,&#xd;
+      &quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+      &quot;macAddress&quot;: &quot;&quot;,&#xd;
+      &quot;logicalName&quot;: &quot;lo&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;vendor&quot;: &quot;&quot;,&#xd;
+      &quot;product&quot;: &quot;&quot;,&#xd;
+      &quot;dhcpEnabled&quot;: false,&#xd;
+      &quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+      &quot;dnsServers&quot;: null,&#xd;
+      &quot;ipv4&quot;: &quot;172.28.5.92&quot;,&#xd;
+      &quot;ipv6&quot;: &quot;::&quot;,&#xd;
+      &quot;subnetMask&quot;: &quot;255.255.252.0&quot;,&#xd;
+      &quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+      &quot;macAddress&quot;: &quot;06:ae:de:56:26:d0&quot;,&#xd;
+      &quot;logicalName&quot;: &quot;eth0&quot;&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;os&quot;: {&#xd;
+    &quot;product&quot;: &quot;Ubuntu&quot;,&#xd;
+    &quot;manufacturer&quot;: &quot;Ubuntu 14.04.5 LTS&quot;,&#xd;
+    &quot;osLanguage&quot;: &quot;en_US&quot;,&#xd;
+    &quot;serialNumber&quot;: &quot;&quot;,&#xd;
+    &quot;version&quot;: &quot;14.04&quot;,&#xd;
+    &quot;installDate&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+    &quot;type&quot;: &quot;&quot;,&#xd;
+    &quot;arch&quot;: &quot;&quot;&#xd;
+  },&#xd;
+  &quot;processors&quot;: [&#xd;
+    {&#xd;
+      &quot;product&quot;: &quot;Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz&quot;,&#xd;
+      &quot;numberOfCores&quot;: 2,&#xd;
+      &quot;clockSpeedMhz&quot;: 2400.058,&#xd;
+      &quot;family&quot;: 6,&#xd;
+      &quot;manufacturer&quot;: &quot;GenuineIntel&quot;,&#xd;
+      &quot;processorType&quot;: &quot;x86_64&quot;,&#xd;
+      &quot;serialNumber&quot;: &quot;&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;product&quot;: &quot;Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz&quot;,&#xd;
+      &quot;numberOfCores&quot;: 2,&#xd;
+      &quot;clockSpeedMhz&quot;: 2400.058,&#xd;
+      &quot;family&quot;: 6,&#xd;
+      &quot;manufacturer&quot;: &quot;GenuineIntel&quot;,&#xd;
+      &quot;processorType&quot;: &quot;x86_64&quot;,&#xd;
+      &quot;serialNumber&quot;: &quot;&quot;&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;raidController&quot;: {&#xd;
+    &quot;softwareRaid&quot;: &quot;&quot;,&#xd;
+    &quot;hardwareRaid&quot;: &quot;&quot;,&#xd;
+    &quot;vendor&quot;: &quot;&quot;&#xd;
+  },&#xd;
+  &quot;system&quot;: {&#xd;
+    &quot;product&quot;: &quot;HVM domU ()&quot;,&#xd;
+    &quot;model&quot;: &quot;&quot;,&#xd;
+    &quot;timeZone&quot;: &quot;+0530&quot;,&#xd;
+    &quot;timeZoneDescription&quot;: &quot;IST&quot;,&#xd;
+    &quot;serialNumber&quot;: &quot;ec2ca9c0-8dbe-8c44-d7ea-5d0a0f20ed2d&quot;,&#xd;
+    &quot;systemName&quot;: &quot;3fb4c489-64e4-42e6-82a2-edf53bb72535&quot;,&#xd;
+    &quot;category&quot;: &quot;&quot;&#xd;
+  }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${agentDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/agent/v1/${agentCoreEndPointId}/asset</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

@@ -1,0 +1,6900 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Tag: @Desktopbvt</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>PlatformAutomation Automation Report</td>
+                          <td>version 1</td>
+                        <td>21 Sep 2018, 15:30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Tag Report</h2>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        <thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="6">Steps</th>
+    <th colspan="2">Totals</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+        <tbody>
+        <tr>
+          <td class="tagname">@Desktopbvt</td>
+                    <td  class="passed"    >3</td>
+          <td  class="failed"    >21</td>
+          <td class="total">24</td>
+          <td      class="passed"    >9</td>
+          <td      class="failed"    >21</td>
+          <td     class="skipped"   >112</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">142</td>
+          <td class="duration" data-value="426772670171">7m 6s 772ms</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="RegressionAsset.html">@RegressionAsset</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">E2E Validation for Asset MicroService with Partner Id with invalid EndPoint Id-C2626507</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read GET response from a micro-service as "/asset/v1/partner/50001794/endpoints/6778"</span>
+  
+  <span class="lead-duration duration">1s 642ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-4" class="collapse collapsable-details">
+          <pre>I send a Get request for URL http://internal-Continuum-Asset-Service-ELB-Int-1972580147.ap-south-1.elb.amazonaws.com/asset/v1/partner/50001794/endpoints/6778</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "<404>"Not Found</span>
+  
+  <span class="lead-duration duration">394ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-5" class="collapse collapsable-details">
+          <pre>Status Not Found</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-6" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="RegressionAsset.html">@RegressionAsset</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">E2E Validation for Asset MicroService with Partner Id with invalid EndPoint Id-C2626507</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-8" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read GET response from a micro-service as "/asset/v1/partner/@345/endpoints/6778"</span>
+  
+  <span class="lead-duration duration">1s 001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-10" class="collapse collapsable-details">
+          <pre>I send a Get request for URL http://internal-Continuum-Asset-Service-ELB-Int-1972580147.ap-south-1.elb.amazonaws.com/asset/v1/partner/@345/endpoints/6778</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "<404>"Not Found</span>
+  
+  <span class="lead-duration duration">153ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-11" class="collapse collapsable-details">
+          <pre>Status Not Found</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-12" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-14" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 008ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Error message</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "1"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=os"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "os"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-17">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-17" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-18">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-18" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-19">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-19" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-20">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 012ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Error message</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "2"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=drives"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "drives"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-22">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-22" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-23">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-24">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-24" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-25">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-25" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 008ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Error message</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "3"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=networks"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "networks"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-27">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-27" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-28">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-28" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-29">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-29" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-30">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-30" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 136ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Error message</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "4"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=processors"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "processors"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-32">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-32" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-33">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-34">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-34" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-35">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-35" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 104ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Error message</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "5"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=physicalMemory"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "physicalMemory"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-37">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-37" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-38">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-38" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-39">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-39" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-40">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-40" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 022ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Error message</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "6"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=installedSoftwares"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "installedSoftwares"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-42">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-42" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-43">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-43" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-44">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-44" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-45">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-45" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 010ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+          <a>Error message</a>
+      </div>
+      <div id="msg-46" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "7"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=keyboards"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "keyboards"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-47">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-47" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-48">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-48" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-49">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-49" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-50">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-50" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 048ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-51">
+          <a>Error message</a>
+      </div>
+      <div id="msg-51" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "8"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=mouse"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "mouse"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-52">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-52" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-53">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-53" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-54">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-54" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-55">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-55" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 006ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-56">
+          <a>Error message</a>
+      </div>
+      <div id="msg-56" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "10"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=physicalDrives"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "physicalDrives"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-57">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-57" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-58">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-58" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-59">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-59" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-60">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-60" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 006ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-61">
+          <a>Error message</a>
+      </div>
+      <div id="msg-61" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "11"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=baseBoard"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "baseBoard"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-62">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-62" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-63">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-63" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-64">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-64" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-65">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-65" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 015ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-66">
+          <a>Error message</a>
+      </div>
+      <div id="msg-66" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "12"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=bios"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "bios"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-67">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-67" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-68">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-68" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-69">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-69" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-70">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-70" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 024ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-71">
+          <a>Error message</a>
+      </div>
+      <div id="msg-71" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "13"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=system"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "system"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-72">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-72" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-73">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-73" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-74">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-74" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-75">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-75" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 006ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-76">
+          <a>Error message</a>
+      </div>
+      <div id="msg-76" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "14"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=os&field=baseBoard"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "osBaseBoard"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-77">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-77" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-78">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-78" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-79">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-79" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-80">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-80" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 009ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-81">
+          <a>Error message</a>
+      </div>
+      <div id="msg-81" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "15"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=drives&field=networks"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "drivesNetworks"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-82">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-82" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-83">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-83" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-84">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-84" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-85">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-85" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 300ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-86">
+          <a>Error message</a>
+      </div>
+      <div id="msg-86" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "16"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=keyboards&field=mouse"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "keyboardsMouse"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-87">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-87" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-88">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService-C2517063</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-88" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-89">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-89" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-90">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-90" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 006ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-91">
+          <a>Error message</a>
+      </div>
+      <div id="msg-91" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:286)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "17"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=installedSoftwares&field=users&field=friendlyName"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I validate the contents of the Service for "installedSoftwaresUsers"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-92">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-92" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-93">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService For Incorrect Attributes-C2517223</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-93" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-94">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-94" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-95">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-95" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 006ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-96">
+          <a>Error message</a>
+      </div>
+      <div id="msg-96" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:332)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "1"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=os1"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "400"Bad Request</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-97">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-97" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-98">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService For Incorrect Attributes-C2517223</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-98" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-99">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-99" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-100">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-100" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 273ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-101">
+          <a>Error message</a>
+      </div>
+      <div id="msg-101" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:332)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "2"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=drives@"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "400"Bad Request</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-102">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-102" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-103">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService For Incorrect Attributes-C2517223</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-103" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-104">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-104" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-105">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-105" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 221ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-106">
+          <a>Error message</a>
+      </div>
+      <div id="msg-106" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:332)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "3"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=networks2"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "400"Bad Request</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-107">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-107" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-AssetMS-feature.html">View Feature</a> <i>Asset Micro-services-Plugin Data Validation-Windows platform</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-108">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validation for Projection of Attributes For Asset MicroService For Incorrect Attributes-C2517223</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-108" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-109">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-109" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-110">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-110" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">SSH connection established with remote test machine from tag</span>
+  
+  <span class="lead-duration duration">21s 008ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-111">
+          <a>Error message</a>
+      </div>
+      <div id="msg-111" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Failed to connect through SSH machine ip -> 10.2.114.83
+	at org.testng.Assert.fail(Assert.java:93)
+	at continuum.cucumber.Page.Ssh.CreateSession(Ssh.java:142)
+	at continuum.cucumber.Page.FrameworkServices.sshManager(FrameworkServices.java:76)
+	at continuum.cucumber.stepDefinations.platform.CommonSteps.sshConnectionEstablishedWithRemoteTestMachineFromTag(CommonSteps.java:82)
+	at ✽.Given SSH connection established with remote test machine from tag(desktop/AssetMS.feature:332)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">I read data from excel with rowIndex "4"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I fetch EndPointID of the machine from tag</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service and store in file with GET as "/asset/v1/partner/RandomPartnerID/endpoints/RandomEndPoint?field=processorss"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "400"Bad Request</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-112">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-112" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-BVT-feature.html">View Feature</a> <i>Scenarios for Build Verification Testing</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="RegressionAsset.html">@RegressionAsset</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-113">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate SITE REST API of asset MS for a given partner and site Id-C3883238</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-113" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-114">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-114" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-115">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-115" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service as "/asset/v1/partner/50001794/sites/50110521/summary"</span>
+  
+  <span class="lead-duration duration">1s</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-116">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-116" class="collapse collapsable-details">
+          <pre>I send a Get request for URL http://internal-Continuum-Asset-Service-ELB-Int-1972580147.ap-south-1.elb.amazonaws.com/asset/v1/partner/50001794/sites/50110521/summary</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">195ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-117">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-117" class="collapse collapsable-details">
+          <pre>Status OK</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I should fetch response for API</span>
+  
+  <span class="lead-duration duration">074ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-118">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-118" class="collapse collapsable-details">
+          <pre>
+
+Response is :[{"createTimeUTC":"2018-09-07T09:57:17.65Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"05092396-f89a-40af-ab7d-8c30e4989a31","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53758709","friendlyName":"RMM-LT-488","remoteAddress":"10.2.200.141","resourceType":"Server","endpointType":"Server","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"Microsoft Windows Server 2012 Datacenter Evaluation Test","manufacturer":"Microsoft Corporation","osLanguage":"English (United States)","serialNumber":"00184-40000-00001-AA148","version":"6.2.920000","installDate":"2018-03-08T14:08:33Z","type":"windows","arch":"64-bit","servicePack":"Service Pack 3","osInstalledDrive":"C:","buildNumber":"9200","productID":"00184-40000-00001-AA148","productKey":"73BMN-332G9-DX6B8-FGDT3-GFYT6"},"raidController":{},"system":{"product":"Dell Inc.","model":"Latitude 3450","timeZone":"+0530","timeZoneDescription":"IST","systemName":"RMM-LT-488-Testing Version","domain":"corp.continuum.net","domainRole":3}},{"createTimeUTC":"2018-06-22T10:12:27.213Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"0963789c-3b84-4405-b036-86c8bc3676ae","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53758746","friendlyName":"DT-WIN2K8-32-1","remoteAddress":"14.141.10.220","resourceType":"Server","endpointType":"Server","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"MicrosoftÂ® Windows ServerÂ® 2008 Standard ","manufacturer":"Microsoft Corporation","osLanguage":"English (United States)","serialNumber":"55041-223-0788496-76585","version":"6.0.6002","installDate":"2017-12-29T22:48:47Z","type":"windows","arch":"32-bit","servicePack":"Service Pack 2","osInstalledDrive":"C:","buildNumber":"6002","productID":"55041-223-0788496-76585","productKey":"XXXXX-XXXXX-XXXXX-XXXXX-MR9WY"},"raidController":{},"system":{"product":"VMware, Inc.","model":"VMware Virtual Platform","timeZone":"-0700","timeZoneDescription":"PDT","systemName":"DT-WIN2K8-32-1","domain":"WORKGROUP","domainRole":2}},{"createTimeUTC":"2018-09-12T06:44:29.49Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"0f7b1194-73c4-4893-8ff0-81e96ba6549a","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53758701","friendlyName":"hello","remoteAddress":"49.248.136.114","resourceType":"Desktop","endpointType":"Desktop","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"Microsoft Windows 10 Enterprise","manufacturer":"Microsoft Corporation","osLanguage":"English (United Kingdom)","serialNumber":"00329-10438-00000-AA970","version":"10.0.16299","installDate":"2017-12-22T05:28:42Z","type":"windows","arch":"64-bit","servicePack":"","osInstalledDrive":"C:","buildNumber":"16299","productID":"00329-10438-00000-AA970","productKey":"XXXXX-XXXXX-XXXXX-XXXXX-G6PJR"},"raidController":{},"system":{"product":"Dell Inc.","model":"Latitude 7480","timeZone":"+0530","timeZoneDescription":"IST","systemName":"RMM-PN-LT-026","domain":"corp.continuum.net","domainRole":1}},{"createTimeUTC":"2018-09-21T16:42:42.054Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"1f85a43a-7e9f-4a52-9fc6-a4388aa026e6","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53758719","friendlyName":"QA-W2K12R2-64-4","remoteAddress":"125.22.49.114","resourceType":"Server","endpointType":"Server","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"Microsoft Windows Server 2012 R2 Datacenter","manufacturer":"Microsoft Corporation","osLanguage":"English (United States)","serialNumber":"00252-00113-13628-AA792","version":"6.3.9600","installDate":"2017-12-30T15:20:02Z","type":"windows","arch":"64-bit","servicePack":"","osInstalledDrive":"C:","buildNumber":"9600","productID":"00252-00113-13628-AA792","productKey":"VQ6FJ-FNFC3-KT6CK-7WXT7-94QWM"},"raidController":{},"system":{"product":"VMware, Inc.","model":"VMware Virtual Platform","timeZone":"-0700","timeZoneDescription":"PDT","systemName":"QA-W2K12R2-64-4","domain":"WORKGROUP","domainRole":2}},{"createTimeUTC":"2018-09-15T09:15:03.796Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"2d037251-02b8-4d5d-bc52-eaed46fb350e","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53759028","friendlyName":"WIN2K3-64-R2","remoteAddress":"124.124.246.134","resourceType":"Server","endpointType":"Server","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"Microsoft(R) Windows(R) Server 2003 Standard x64 Edition","manufacturer":"Microsoft Corporation","osLanguage":"English (United States)","serialNumber":"76867-005-0718066-53162","version":"5.2.3790","installDate":"2018-08-06T18:14:27Z","type":"windows","arch":"64-bit","servicePack":"Service Pack 2","osInstalledDrive":"C:","buildNumber":"3790","productID":"76867-005-0718066-53162","productKey":"CRD4G-J3TKW-9Q24T-D4M86-32GRD"},"raidController":{},"system":{"product":"VMware, Inc.","model":"VMware Virtual Platform","timeZone":"-0700","timeZoneDescription":"PDT","systemName":"win2k3-64-r2","domain":"WORKGROUP","domainRole":2}},{"createTimeUTC":"2018-08-06T12:30:51.706Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"3c556223-363d-4b91-936a-9bfbfd517bd3","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53758717","friendlyName":"RMM-LT-692","remoteAddress":"125.22.49.114","resourceType":"Desktop","endpointType":"Desktop","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"Microsoft Windows 7 Professional ","manufacturer":"Microsoft Corporation","osLanguage":"English (India)","serialNumber":"00371-OEM-8992671-00008","version":"6.1.7601","installDate":"2016-09-14T01:29:52Z","type":"windows","arch":"64-bit","servicePack":"Service Pack 1","osInstalledDrive":"C:","buildNumber":"7601","productID":"00371-OEM-8992671-00008","productKey":"74T2M-DKDBC-788W3-H689G-6P6GT"},"raidController":{},"system":{"product":"HP","model":"HP ProBook 440 G3","timeZone":"+0530","timeZoneDescription":"IST","systemName":"RMM-LT-692","domain":"corp.continuum.net","domainRole":1}},{"createTimeUTC":"2018-09-10T13:27:43.765Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"9ef94031-6fac-48dc-a8d9-45e3586db854","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53759049","friendlyName":"DT-WIN2K3-32-2","remoteAddress":"124.124.246.134","resourceType":"Server","endpointType":"Server","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"Microsoft(R) Windows(R) Server 2003, Standard Edition","manufacturer":"Microsoft Corporation","osLanguage":"English (United States)","serialNumber":"69712-641-0198287-45657","version":"5.2.3790","installDate":"2017-12-29T20:47:54Z","type":"windows","arch":"32-bit","servicePack":"Service Pack 2","osInstalledDrive":"C:","buildNumber":"3790","productID":"69712-641-0198287-45657","productKey":"GFG8D-TBT6Q-Y77B9-FKKJ9-93BQY"},"raidController":{},"system":{"product":"VMware, Inc.","model":"VMware Virtual Platform","timeZone":"-0700","timeZoneDescription":"PDT","systemName":"DT-WIN2K3-32-2","domain":"WORKGROUP","domainRole":2}},{"createTimeUTC":"2018-09-21T13:08:27.752Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"a6e79b35-ed1c-404c-a468-e1f82d7e52c9","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53758703","friendlyName":"Juno-Automation-Test_bmbY","remoteAddress":"14.141.10.220","resourceType":"Desktop","endpointType":"Desktop","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"Microsoft Windows 8 Pro","manufacturer":"Microsoft Corporation","osLanguage":"English (United States)","serialNumber":"00178-10078-56759-AA760","version":"6.2.9200","installDate":"2017-05-24T19:03:06Z","type":"windows","arch":"64-bit","servicePack":"","osInstalledDrive":"C:","buildNumber":"9200","productID":"00178-10078-56759-AA760","productKey":"CJNGQ-B7BGX-J6QFB-WVQ8G-P7F9V"},"raidController":{},"system":{"product":"VMware, Inc.","model":"VMware Virtual Platform","timeZone":"-0700","timeZoneDescription":"PDT","systemName":"Juno-win8-64","domain":"WORKGROUP","domainRole":0}},{"createTimeUTC":"2018-06-22T01:58:38.767Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"c97b8e34-21a9-4986-b19f-49fa4c2529cc","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53758708","friendlyName":"QAAUTO-W2K16","remoteAddress":"124.124.246.134","resourceType":"Server","endpointType":"Server","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"Microsoft Windows Server 2016 Standard","manufacturer":"Microsoft Corporation","osLanguage":"English (United States)","serialNumber":"00376-30816-83847-AA295","version":"10.0.14393","installDate":"2016-12-24T01:52:46Z","type":"windows","arch":"64-bit","servicePack":"","osInstalledDrive":"C:","buildNumber":"14393","productID":"00376-30816-83847-AA295","productKey":"RP44N-VFB6X-GFMRG-GQV29-BKPG4"},"raidController":{},"system":{"product":"VMware, Inc.","model":"VMware Virtual Platform","timeZone":"-0700","timeZoneDescription":"PDT","systemName":"QAAUTO-W2K16","domain":"WORKGROUP","domainRole":2}},{"createTimeUTC":"2018-06-23T04:50:40.789Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"cad4e010-6afb-4aaa-9a5d-dca173a6591e","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53758704","friendlyName":"SP-Win8-32","remoteAddress":"125.22.49.114","resourceType":"Desktop","endpointType":"Desktop","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"Microsoft Windows 8.1 Pro","manufacturer":"Microsoft Corporation","osLanguage":"English (United States)","serialNumber":"00261-50000-00000-AA602","version":"6.3.9600","installDate":"2017-12-20T22:17:55Z","type":"windows","arch":"32-bit","servicePack":"","osInstalledDrive":"C:","buildNumber":"9600","productID":"00261-50000-00000-AA602","productKey":"GCRJD-8NW9H-F2CDX-CCM8D-9D6T9"},"raidController":{},"system":{"product":"VMware, Inc.","model":"VMware Virtual Platform","timeZone":"-0700","timeZoneDescription":"PDT","systemName":"SP-Win8-32","domain":"WORKGROUP","domainRole":0}},{"createTimeUTC":"2018-09-21T09:42:35.867Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"da871b9d-3a24-43bc-b768-8532bf50e3b4","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53758707","friendlyName":"ForGirnar","remoteAddress":"124.124.246.134","resourceType":"Server","endpointType":"Server","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"Microsoft Windows Server 2008 R2 Standard ","manufacturer":"Microsoft Corporation","osLanguage":"English (United States)","serialNumber":"55041-507-7231744-84734","version":"6.1.7601","installDate":"2015-12-24T16:18:17Z","type":"windows","arch":"64-bit","servicePack":"Service Pack 1","osInstalledDrive":"C:","buildNumber":"7601","productID":"55041-507-7231744-84734","productKey":"XXXXX-XXXXX-XXXXX-XXXXX-2HTRK"},"raidController":{},"system":{"product":"VMware, Inc.","model":"VMware Virtual Platform","timeZone":"+0530","timeZoneDescription":"IST","systemName":"ForGirnar","domain":"WORKGROUP","domainRole":2}},{"createTimeUTC":"2018-09-21T16:45:11.227Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"e4c5fd18-13fc-4166-9a01-838b1092230d","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53759051","friendlyName":"DT-Win7-64-1","remoteAddress":"125.22.49.114","resourceType":"Desktop","endpointType":"Desktop","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"Microsoft Windows 7 Professional ","manufacturer":"Microsoft Corporation","osLanguage":"English (United States)","serialNumber":"00371-222-8110524-86891","version":"6.1.7601","installDate":"2018-01-01T19:17:21Z","type":"windows","arch":"64-bit","servicePack":"Service Pack 1","osInstalledDrive":"C:","buildNumber":"7601","productID":"00371-222-8110524-86891","productKey":"YKP6X-27K93-JHD27-WQT2Q-Q4JB4"},"raidController":{},"system":{"product":"VMware, Inc.","model":"VMware Virtual Platform","timeZone":"-0700","timeZoneDescription":"PDT","systemName":"DT-Win7-64-1","domain":"WORKGROUP","domainRole":0}},{"createTimeUTC":"2018-06-23T16:53:51.654Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"e565fe9b-aa73-4847-a023-65d564664ea6","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53758700","friendlyName":"win8_32","remoteAddress":"124.124.246.134","resourceType":"Desktop","endpointType":"Desktop","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"Microsoft Windows 8 Pro","manufacturer":"Microsoft Corporation","osLanguage":"English (United States)","serialNumber":"00178-70000-00011-AA129","version":"6.2.9200","installDate":"2017-09-11T16:20:38Z","type":"windows","arch":"32-bit","servicePack":"","osInstalledDrive":"C:","buildNumber":"9200","productID":"00178-70000-00011-AA129","productKey":"BG4HW-VH26C-733KW-K6F98-J8CK4"},"raidController":{},"system":{"product":"VMware, Inc.","model":"VMware Virtual Platform","timeZone":"-0700","timeZoneDescription":"PDT","systemName":"Juno-win83201","domain":"WORKGROUP","domainRole":0}},{"createTimeUTC":"2018-06-14T12:58:27.811Z","createdBy":"/agent/plugin/asset","name":"asset","type":"assetCollection","endpointID":"f71feb3c-f310-4520-b900-664df36dfcbe","partnerID":"50001794","clientID":"50110521","siteID":"50110521","regID":"53758709","friendlyName":"","remoteAddress":"114.143.237.210","resourceType":"Server","endpointType":"Server","baseBoard":{"manufacturer":"","installDate":"0001-01-01T00:00:00Z"},"bios":{},"os":{"product":"Microsoft Windows Server 2012 Datacenter Evaluation","manufacturer":"Microsoft Corporation","osLanguage":"English (United States)","serialNumber":"00184-40000-00001-AA148","version":"6.2.9200","installDate":"2018-03-08T14:08:33Z","type":"windows","arch":"64-bit","servicePack":"","osInstalledDrive":"C:","buildNumber":"9200","productID":"00184-40000-00001-AA148","productKey":"73BMN-332G9-DX6B8-FGDT3-GFYT6"},"raidController":{},"system":{"product":"Dell Inc.","model":"Latitude 3450","timeZone":"+0530","timeZoneDescription":"IST","systemName":"RMM-LT-488","domain":"corp.continuum.net","domainRole":3}}]</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">I should validate API model for Site API</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-119">
+          <a>Error message</a>
+      </div>
+      <div id="msg-119" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: expected [17] but found [18]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at org.testng.Assert.assertEquals(Assert.java:398)
+	at continuum.cucumber.Page.AgentMicroServiceAPI.validateSiteAPI(AgentMicroServiceAPI.java:1825)
+	at continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination.I_should_validate_API_model_for_Site_API(JunoPlatformStepDefination.java:237)
+	at ✽.And I should validate API model for Site API(desktop/BVT.feature:65)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-120">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-120" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="desktop-BVT-feature.html">View Feature</a> <i>Scenarios for Build Verification Testing</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="DesktopRelease.html">@DesktopRelease</a>
+       <a href="WinServer8_64Bit.html">@WinServer8_64Bit</a>
+       <a href="Win7_32Bit.html">@Win7_32Bit</a>
+       <a href="WinServer12R2_64Bit.html">@WinServer12R2_64Bit</a>
+       <a href="WinVista_32Bit.html">@WinVista_32Bit</a>
+       <a href="WinXP_32Bit.html">@WinXP_32Bit</a>
+       <a href="WinServer8_Standard.html">@WinServer8_Standard</a>
+       <a href="WinServer3_64Bit.html">@WinServer3_64Bit</a>
+       <a href="WinServer16_64Bit.html">@WinServer16_64Bit</a>
+       <a href="Win10_64Bit.html">@Win10_64Bit</a>
+       <a href="WinServer12_64Bit.html">@WinServer12_64Bit</a>
+       <a href="Win8.1_32Bit.html">@Win8.1_32Bit</a>
+       <a href="WinVista_64Bit.html">@WinVista_64Bit</a>
+       <a href="Win7_64Bit.html">@Win7_64Bit</a>
+       <a href="Win8_64Bit.html">@Win8_64Bit</a>
+       <a href="WinXP_64Bit.html">@WinXP_64Bit</a>
+       <a href="Regression.html">@Regression</a>
+       <a href="Desktopbvt.html">@Desktopbvt</a>
+       <a href="DesktopRegression.html">@DesktopRegression</a>
+       <a href="RegressionAsset.html">@RegressionAsset</a>
+       <a href="Win10_32Bit.html">@Win10_32Bit</a>
+       <a href="WinServer3_32Bit.html">@WinServer3_32Bit</a>
+       <a href="WinServer3R2_64Bit.html">@WinServer3R2_64Bit</a>
+       <a href="Win8_32Bit.html">@Win8_32Bit</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-121">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate SITE REST API of asset MS for a given partner and multiple site Ids-C3883239</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-121" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-122">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-122" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CommonSteps.readScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-123">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-123" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I read GET response from a micro-service as "/asset/v1/partner/50001794/sites/50110524,50110521/summary"</span>
+  
+  <span class="lead-duration duration">1s</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-124">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-124" class="collapse collapsable-details">
+          <pre>I send a Get request for URL http://internal-Continuum-Asset-Service-ELB-Int-1972580147.ap-south-1.elb.amazonaws.com/asset/v1/partner/50001794/sites/50110524,50110521/summary</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should validate the status code as "200"OK</span>
+  
+  <span class="lead-duration duration">060ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-125">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-125" class="collapse collapsable-details">
+          <pre>Status OK</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-126">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-126" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">CommonSteps.cleanup()</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

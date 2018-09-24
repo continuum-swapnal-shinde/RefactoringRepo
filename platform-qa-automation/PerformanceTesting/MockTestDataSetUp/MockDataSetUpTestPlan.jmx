@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.1" jmeter="3.1 r1770033">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Mock Data SetUp Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Mock Test Data CSV File" enabled="true">
+        <stringProp name="filename">${__P(csvfile,)}</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames"></stringProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Elastic Load Balancers" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="AgentELB" elementType="Argument">
+            <stringProp name="Argument.name">AgentELB</stringProp>
+            <stringProp name="Argument.value">integration.agent.service.itsupport247.net</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="AssetELB" elementType="Argument">
+            <stringProp name="Argument.name">AssetELB</stringProp>
+            <stringProp name="Argument.value">internal-Continuum-Asset-Service-ELB-Int-1972580147.ap-south-1.elb.amazonaws.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Mock Test Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">65</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1500998524000</longProp>
+        <longProp name="ThreadGroup.end_time">1500998524000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Flow Control" enabled="true"/>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Fetch EndPoint Id" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+	&quot;endpointID&quot;: &quot;&quot;,&#xd;
+	&quot;agentID&quot;: &quot;&quot;,&#xd;
+	&quot;partnerID&quot;: &quot;${memberId}&quot;,&#xd;
+	&quot;siteID&quot;: &quot;${siteId}&quot;,&#xd;
+	&quot;clientID&quot;: &quot;${siteId}&quot;,&#xd;
+	&quot;legacyRegID&quot;: &quot;${regId}&quot;,&#xd;
+	&quot;sysInfo&quot;: {&#xd;
+		&quot;timestamp_utc&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+		&quot;osName&quot;: &quot;Microsoft Windows 7 Professional &quot;,&#xd;
+		&quot;osVersion&quot;: &quot;6.1.7601&quot;,&#xd;
+		&quot;osSerialNumber&quot;: &quot;00371-222-6812146-86505&quot;,&#xd;
+		&quot;hostName&quot;: &quot;Juno-win7-32&quot;,&#xd;
+		&quot;macAddress&quot;: &quot;00:50:56:A7:43:B7&quot;,&#xd;
+		&quot;processorid&quot;: &quot;0FABFBFF000306F2&quot;,&#xd;
+		&quot;processorType&quot;: &quot;3&quot;,&#xd;
+		&quot;hardDriveSerialNumber&quot;: &quot;&quot;,&#xd;
+		&quot;memory&quot;: &quot;&quot;,&#xd;
+		&quot;motherboardAdapter&quot;: &quot;None&quot;,&#xd;
+		&quot;cdromSerial&quot;: &quot;&quot;,&#xd;
+		&quot;logicalDiskVolumeSerialNumber&quot;: &quot;D2D87D09&quot;,&#xd;
+		&quot;biosSerial&quot;: &quot;VMware-42 27 28 c5 09 ce 3a a2-9e 3b c0 25 1f fb e5 db&quot;&#xd;
+	}&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${AgentELB}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/agent/v1/registration</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract EndPoint ID" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">endPointId</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;(.*)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">NOT CAPTURED</stringProp>
+              <stringProp name="RegexExtractor.match_number">0</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Data to Kafka Stream" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+	&quot;createTimeUTC&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss.SSS&apos;Z&apos;)}&quot;,&#xd;
+	&quot;createdBy&quot;: &quot;/agent/plugin/asset&quot;,&#xd;
+	&quot;name&quot;: &quot;&quot;,&#xd;
+	&quot;type&quot;: &quot;&quot;,&#xd;
+	&quot;endpointID&quot;: &quot;${endPointId}&quot;,&#xd;
+	&quot;partnerID&quot;: &quot;${memberId}&quot;,&#xd;
+	&quot;clientID&quot;: &quot;${siteId}&quot;,&#xd;
+	&quot;siteID&quot;: &quot;${siteId}&quot;,&#xd;
+	&quot;regID&quot;: &quot;${regId}&quot;,&#xd;
+	&quot;friendlyName&quot;: &quot;&quot;,&#xd;
+	&quot;remoteAddress&quot;: &quot;&quot;,&#xd;
+	&quot;baseBoard&quot;: {&#xd;
+		&quot;product&quot;: &quot;440BX Desktop Reference Platform&quot;,&#xd;
+		&quot;manufacturer&quot;: &quot;${baseBoardManufacturer}&quot;,&#xd;
+		&quot;model&quot;: &quot;&quot;,&#xd;
+		&quot;serialNumber&quot;: &quot;None&quot;,&#xd;
+		&quot;version&quot;: &quot;None&quot;,&#xd;
+		&quot;name&quot;: &quot;Base Board&quot;,&#xd;
+		&quot;installDate&quot;: &quot;0001-01-01T00:00:00Z&quot;&#xd;
+	},&#xd;
+	&quot;bios&quot;: {&#xd;
+		&quot;product&quot;: &quot;PhoenixBIOS 4.0 Release 6.0     &quot;,&#xd;
+		&quot;manufacturer&quot;: &quot;Phoenix Technologies LTD&quot;,&#xd;
+		&quot;version&quot;: &quot;INTEL  - 6040000&quot;,&#xd;
+		&quot;serialNumber&quot;: &quot;VMware-42 27 28 c5 09 ce 3a a2-9e 3b c0 25 1f fb e5 db&quot;,&#xd;
+		&quot;smbiosVersion&quot;: &quot;6.00&quot;&#xd;
+	},&#xd;
+	&quot;drives&quot;: [{&#xd;
+			&quot;product&quot;: &quot;VMware Virtual disk SCSI Disk Device&quot;,&#xd;
+			&quot;manufacturer&quot;: &quot;(Standard disk drives)&quot;,&#xd;
+			&quot;mediaType&quot;: &quot;Fixed hard disk media&quot;,&#xd;
+			&quot;interfaceType&quot;: &quot;SCSI&quot;,&#xd;
+			&quot;logicalName&quot;: &quot;PHYSICALDRIVE0&quot;,&#xd;
+			&quot;serialNumber&quot;: &quot;&quot;,&#xd;
+			&quot;partitions&quot;: null,&#xd;
+			&quot;sizeBytes&quot;: 64420392960,&#xd;
+			&quot;numberOfPartitions&quot;: 2,&#xd;
+			&quot;partitionData&quot;: [{&#xd;
+					&quot;name&quot;: &quot;C:&quot;,&#xd;
+					&quot;label&quot;: &quot;&quot;,&#xd;
+					&quot;fileSystem&quot;: &quot;NTFS&quot;,&#xd;
+					&quot;description&quot;: &quot;Local Fixed Disk&quot;,&#xd;
+					&quot;sizeBytes&quot;: 64317550592&#xd;
+				}&#xd;
+			]&#xd;
+		}&#xd;
+	],&#xd;
+	&quot;physicalMemory&quot;: [&#xd;
+      {&#xd;
+         &quot;manufacturer&quot;: &quot;Samsung&quot;,&#xd;
+         &quot;serialNumber&quot;: &quot;348AEA0D&quot;,&#xd;
+         &quot;sizeBytes&quot;: ${ramSize}&#xd;
+      },&#xd;
+      {&#xd;
+         &quot;manufacturer&quot;: &quot;Samsung&quot;,&#xd;
+         &quot;serialNumber&quot;: &quot;348AE8D2&quot;,&#xd;
+         &quot;sizeBytes&quot;: ${ramSize}&#xd;
+      }&#xd;
+   ],&#xd;
+	&quot;networks&quot;: [{&#xd;
+			&quot;vendor&quot;: &quot;Microsoft&quot;,&#xd;
+			&quot;product&quot;: &quot;WAN Miniport (SSTP)&quot;,&#xd;
+			&quot;dhcpEnabled&quot;: false,&#xd;
+			&quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;dhcpLeaseObtained&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dhcpLeaseExpires&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dnsServers&quot;: null,&#xd;
+			&quot;ipEnabled&quot;: false,&#xd;
+			&quot;ipv4&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;ipv4List&quot;: null,&#xd;
+			&quot;ipv6&quot;: &quot;::&quot;,&#xd;
+			&quot;ipv6List&quot;: null,&#xd;
+			&quot;subnetMask&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;subnetMasks&quot;: null,&#xd;
+			&quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;defaultIPGateways&quot;: null,&#xd;
+			&quot;macAddress&quot;: &quot;&quot;,&#xd;
+			&quot;winsPrimaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;winsSecondaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;logicalName&quot;: &quot;WAN Miniport (SSTP)&quot;&#xd;
+		}, {&#xd;
+			&quot;vendor&quot;: &quot;Microsoft&quot;,&#xd;
+			&quot;product&quot;: &quot;WAN Miniport (IKEv2)&quot;,&#xd;
+			&quot;dhcpEnabled&quot;: false,&#xd;
+			&quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;dhcpLeaseObtained&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dhcpLeaseExpires&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dnsServers&quot;: null,&#xd;
+			&quot;ipEnabled&quot;: false,&#xd;
+			&quot;ipv4&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;ipv4List&quot;: null,&#xd;
+			&quot;ipv6&quot;: &quot;::&quot;,&#xd;
+			&quot;ipv6List&quot;: null,&#xd;
+			&quot;subnetMask&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;subnetMasks&quot;: null,&#xd;
+			&quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;defaultIPGateways&quot;: null,&#xd;
+			&quot;macAddress&quot;: &quot;&quot;,&#xd;
+			&quot;winsPrimaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;winsSecondaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;logicalName&quot;: &quot;WAN Miniport (IKEv2)&quot;&#xd;
+		}, {&#xd;
+			&quot;vendor&quot;: &quot;Microsoft&quot;,&#xd;
+			&quot;product&quot;: &quot;WAN Miniport (L2TP)&quot;,&#xd;
+			&quot;dhcpEnabled&quot;: false,&#xd;
+			&quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;dhcpLeaseObtained&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dhcpLeaseExpires&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dnsServers&quot;: null,&#xd;
+			&quot;ipEnabled&quot;: false,&#xd;
+			&quot;ipv4&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;ipv4List&quot;: null,&#xd;
+			&quot;ipv6&quot;: &quot;::&quot;,&#xd;
+			&quot;ipv6List&quot;: null,&#xd;
+			&quot;subnetMask&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;subnetMasks&quot;: null,&#xd;
+			&quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;defaultIPGateways&quot;: null,&#xd;
+			&quot;macAddress&quot;: &quot;&quot;,&#xd;
+			&quot;winsPrimaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;winsSecondaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;logicalName&quot;: &quot;WAN Miniport (L2TP)&quot;&#xd;
+		}, {&#xd;
+			&quot;vendor&quot;: &quot;Microsoft&quot;,&#xd;
+			&quot;product&quot;: &quot;WAN Miniport (PPTP)&quot;,&#xd;
+			&quot;dhcpEnabled&quot;: false,&#xd;
+			&quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;dhcpLeaseObtained&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dhcpLeaseExpires&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dnsServers&quot;: null,&#xd;
+			&quot;ipEnabled&quot;: false,&#xd;
+			&quot;ipv4&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;ipv4List&quot;: null,&#xd;
+			&quot;ipv6&quot;: &quot;::&quot;,&#xd;
+			&quot;ipv6List&quot;: null,&#xd;
+			&quot;subnetMask&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;subnetMasks&quot;: null,&#xd;
+			&quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;defaultIPGateways&quot;: null,&#xd;
+			&quot;macAddress&quot;: &quot;&quot;,&#xd;
+			&quot;winsPrimaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;winsSecondaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;logicalName&quot;: &quot;WAN Miniport (PPTP)&quot;&#xd;
+		}, {&#xd;
+			&quot;vendor&quot;: &quot;Microsoft&quot;,&#xd;
+			&quot;product&quot;: &quot;WAN Miniport (PPPOE)&quot;,&#xd;
+			&quot;dhcpEnabled&quot;: false,&#xd;
+			&quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;dhcpLeaseObtained&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dhcpLeaseExpires&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dnsServers&quot;: null,&#xd;
+			&quot;ipEnabled&quot;: false,&#xd;
+			&quot;ipv4&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;ipv4List&quot;: null,&#xd;
+			&quot;ipv6&quot;: &quot;::&quot;,&#xd;
+			&quot;ipv6List&quot;: null,&#xd;
+			&quot;subnetMask&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;subnetMasks&quot;: null,&#xd;
+			&quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;defaultIPGateways&quot;: null,&#xd;
+			&quot;macAddress&quot;: &quot;&quot;,&#xd;
+			&quot;winsPrimaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;winsSecondaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;logicalName&quot;: &quot;WAN Miniport (PPPOE)&quot;&#xd;
+		}, {&#xd;
+			&quot;vendor&quot;: &quot;Microsoft&quot;,&#xd;
+			&quot;product&quot;: &quot;WAN Miniport (IPv6)&quot;,&#xd;
+			&quot;dhcpEnabled&quot;: false,&#xd;
+			&quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;dhcpLeaseObtained&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dhcpLeaseExpires&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dnsServers&quot;: null,&#xd;
+			&quot;ipEnabled&quot;: false,&#xd;
+			&quot;ipv4&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;ipv4List&quot;: null,&#xd;
+			&quot;ipv6&quot;: &quot;::&quot;,&#xd;
+			&quot;ipv6List&quot;: null,&#xd;
+			&quot;subnetMask&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;subnetMasks&quot;: null,&#xd;
+			&quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;defaultIPGateways&quot;: null,&#xd;
+			&quot;macAddress&quot;: &quot;&quot;,&#xd;
+			&quot;winsPrimaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;winsSecondaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;logicalName&quot;: &quot;WAN Miniport (IPv6)&quot;&#xd;
+		}, {&#xd;
+			&quot;vendor&quot;: &quot;Microsoft&quot;,&#xd;
+			&quot;product&quot;: &quot;WAN Miniport (Network Monitor)&quot;,&#xd;
+			&quot;dhcpEnabled&quot;: false,&#xd;
+			&quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;dhcpLeaseObtained&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dhcpLeaseExpires&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dnsServers&quot;: null,&#xd;
+			&quot;ipEnabled&quot;: false,&#xd;
+			&quot;ipv4&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;ipv4List&quot;: null,&#xd;
+			&quot;ipv6&quot;: &quot;::&quot;,&#xd;
+			&quot;ipv6List&quot;: null,&#xd;
+			&quot;subnetMask&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;subnetMasks&quot;: null,&#xd;
+			&quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;defaultIPGateways&quot;: null,&#xd;
+			&quot;macAddress&quot;: &quot;&quot;,&#xd;
+			&quot;winsPrimaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;winsSecondaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;logicalName&quot;: &quot;WAN Miniport (Network Monitor)&quot;&#xd;
+		}, {&#xd;
+			&quot;vendor&quot;: &quot;Intel&quot;,&#xd;
+			&quot;product&quot;: &quot;Intel(R) PRO/1000 MT Network Connection&quot;,&#xd;
+			&quot;dhcpEnabled&quot;: true,&#xd;
+			&quot;dhcpServer&quot;: &quot;10.2.114.20&quot;,&#xd;
+			&quot;dhcpLeaseObtained&quot;: &quot;2017-07-30T03:25:59+05:30&quot;,&#xd;
+			&quot;dhcpLeaseExpires&quot;: &quot;2017-08-14T03:25:59+05:30&quot;,&#xd;
+			&quot;dnsServers&quot;: [&quot;10.2.17.25&quot;, &quot;10.2.17.6&quot;],&#xd;
+			&quot;ipEnabled&quot;: true,&#xd;
+			&quot;ipv4&quot;: &quot;10.2.114.112&quot;,&#xd;
+			&quot;ipv4List&quot;: [&quot;10.2.114.112&quot;],&#xd;
+			&quot;ipv6&quot;: &quot;fe80::9d07:48ad:d107:e85d&quot;,&#xd;
+			&quot;ipv6List&quot;: [&quot;fe80::9d07:48ad:d107:e85d&quot;],&#xd;
+			&quot;subnetMask&quot;: &quot;255.255.254.0&quot;,&#xd;
+			&quot;subnetMasks&quot;: [&quot;255.255.254.0&quot;, &quot;64&quot;],&#xd;
+			&quot;defaultIPGateway&quot;: &quot;10.2.114.1&quot;,&#xd;
+			&quot;defaultIPGateways&quot;: [&quot;10.2.114.1&quot;],&#xd;
+			&quot;macAddress&quot;: &quot;00:50:56:A7:43:B7&quot;,&#xd;
+			&quot;winsPrimaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;winsSecondaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;logicalName&quot;: &quot;Intel(R) PRO/1000 MT Network Connection&quot;&#xd;
+		}, {&#xd;
+			&quot;vendor&quot;: &quot;Microsoft&quot;,&#xd;
+			&quot;product&quot;: &quot;WAN Miniport (IP)&quot;,&#xd;
+			&quot;dhcpEnabled&quot;: false,&#xd;
+			&quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;dhcpLeaseObtained&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dhcpLeaseExpires&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dnsServers&quot;: null,&#xd;
+			&quot;ipEnabled&quot;: false,&#xd;
+			&quot;ipv4&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;ipv4List&quot;: null,&#xd;
+			&quot;ipv6&quot;: &quot;::&quot;,&#xd;
+			&quot;ipv6List&quot;: null,&#xd;
+			&quot;subnetMask&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;subnetMasks&quot;: null,&#xd;
+			&quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;defaultIPGateways&quot;: null,&#xd;
+			&quot;macAddress&quot;: &quot;&quot;,&#xd;
+			&quot;winsPrimaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;winsSecondaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;logicalName&quot;: &quot;WAN Miniport (IP)&quot;&#xd;
+		}, {&#xd;
+			&quot;vendor&quot;: &quot;Microsoft&quot;,&#xd;
+			&quot;product&quot;: &quot;Microsoft ISATAP Adapter&quot;,&#xd;
+			&quot;dhcpEnabled&quot;: false,&#xd;
+			&quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;dhcpLeaseObtained&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dhcpLeaseExpires&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dnsServers&quot;: null,&#xd;
+			&quot;ipEnabled&quot;: false,&#xd;
+			&quot;ipv4&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;ipv4List&quot;: null,&#xd;
+			&quot;ipv6&quot;: &quot;::&quot;,&#xd;
+			&quot;ipv6List&quot;: null,&#xd;
+			&quot;subnetMask&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;subnetMasks&quot;: null,&#xd;
+			&quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;defaultIPGateways&quot;: null,&#xd;
+			&quot;macAddress&quot;: &quot;&quot;,&#xd;
+			&quot;winsPrimaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;winsSecondaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;logicalName&quot;: &quot;Microsoft ISATAP Adapter&quot;&#xd;
+		}, {&#xd;
+			&quot;vendor&quot;: &quot;Microsoft&quot;,&#xd;
+			&quot;product&quot;: &quot;RAS Async Adapter&quot;,&#xd;
+			&quot;dhcpEnabled&quot;: false,&#xd;
+			&quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;dhcpLeaseObtained&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dhcpLeaseExpires&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dnsServers&quot;: null,&#xd;
+			&quot;ipEnabled&quot;: false,&#xd;
+			&quot;ipv4&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;ipv4List&quot;: null,&#xd;
+			&quot;ipv6&quot;: &quot;::&quot;,&#xd;
+			&quot;ipv6List&quot;: null,&#xd;
+			&quot;subnetMask&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;subnetMasks&quot;: null,&#xd;
+			&quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;defaultIPGateways&quot;: null,&#xd;
+			&quot;macAddress&quot;: &quot;20:41:53:59:4E:FF&quot;,&#xd;
+			&quot;winsPrimaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;winsSecondaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;logicalName&quot;: &quot;RAS Async Adapter&quot;&#xd;
+		}, {&#xd;
+			&quot;vendor&quot;: &quot;Microsoft&quot;,&#xd;
+			&quot;product&quot;: &quot;Teredo Tunneling Pseudo-Interface&quot;,&#xd;
+			&quot;dhcpEnabled&quot;: false,&#xd;
+			&quot;dhcpServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;dhcpLeaseObtained&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dhcpLeaseExpires&quot;: &quot;0001-01-01T00:00:00Z&quot;,&#xd;
+			&quot;dnsServers&quot;: null,&#xd;
+			&quot;ipEnabled&quot;: false,&#xd;
+			&quot;ipv4&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;ipv4List&quot;: null,&#xd;
+			&quot;ipv6&quot;: &quot;::&quot;,&#xd;
+			&quot;ipv6List&quot;: null,&#xd;
+			&quot;subnetMask&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;subnetMasks&quot;: null,&#xd;
+			&quot;defaultIPGateway&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;defaultIPGateways&quot;: null,&#xd;
+			&quot;macAddress&quot;: &quot;&quot;,&#xd;
+			&quot;winsPrimaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;winsSecondaryServer&quot;: &quot;0.0.0.0&quot;,&#xd;
+			&quot;logicalName&quot;: &quot;Teredo Tunneling Pseudo-Interface&quot;&#xd;
+		}&#xd;
+	],&#xd;
+	&quot;os&quot;: {&#xd;
+		&quot;product&quot;: &quot;${osName}&quot;,&#xd;
+		&quot;manufacturer&quot;: &quot;Microsoft Corporation&quot;,&#xd;
+		&quot;osLanguage&quot;: &quot;English (United States)&quot;,&#xd;
+		&quot;serialNumber&quot;: &quot;00371-222-6812146-86505&quot;,&#xd;
+		&quot;version&quot;: &quot;${osVersion}&quot;,&#xd;
+		&quot;installDate&quot;: &quot;2017-04-04T13:10:19+05:30&quot;,&#xd;
+		&quot;type&quot;: &quot;windows&quot;,&#xd;
+		&quot;arch&quot;: &quot;32-bit&quot;,&#xd;
+		&quot;servicePack&quot;: &quot;${servicePack}&quot;&#xd;
+	},&#xd;
+	&quot;processors&quot;: [{&#xd;
+			&quot;product&quot;: &quot;Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz&quot;,&#xd;
+			&quot;numberOfCores&quot;: 1,&#xd;
+			&quot;clockSpeedMhz&quot;: 2397,&#xd;
+			&quot;family&quot;: 2,&#xd;
+			&quot;manufacturer&quot;: &quot;GenuineIntel&quot;,&#xd;
+			&quot;processorType&quot;: &quot;64&quot;,&#xd;
+			&quot;serialNumber&quot;: &quot;&quot;,&#xd;
+			&quot;level&quot;: 6&#xd;
+		}&#xd;
+	],&#xd;
+	&quot;raidController&quot;: {&#xd;
+		&quot;softwareRaid&quot;: &quot;&quot;,&#xd;
+		&quot;hardwareRaid&quot;: &quot;&quot;,&#xd;
+		&quot;vendor&quot;: &quot;&quot;&#xd;
+	},&#xd;
+	&quot;system&quot;: {&#xd;
+		&quot;product&quot;: &quot;VMware, Inc.&quot;,&#xd;
+		&quot;model&quot;: &quot;VMware Virtual Platform&quot;,&#xd;
+		&quot;timeZone&quot;: &quot;+0530&quot;,&#xd;
+		&quot;timeZoneDescription&quot;: &quot;IST&quot;,&#xd;
+		&quot;serialNumber&quot;: &quot;&quot;,&#xd;
+		&quot;systemName&quot;: &quot;JUNO-WIN7-32&quot;,&#xd;
+		&quot;category&quot;: &quot;&quot;&#xd;
+	},&#xd;
+	&quot;installedSoftwares&quot;: [{&#xd;
+			&quot;name&quot;: &quot;${installedSoftwareFirstName}&quot;,&#xd;
+			&quot;publisher&quot;: &quot;${installedSoftwareFirstPublisher}&quot;,&#xd;
+			&quot;version&quot;: &quot;${installedSoftwareFirstVersion}&quot;,&#xd;
+			&quot;installDate&quot;: &quot;${installedSoftwareFirstInstallDate}&quot;&#xd;
+		}, {&#xd;
+			&quot;name&quot;: &quot;${installedSoftwareSecondName}&quot;,&#xd;
+			&quot;publisher&quot;: &quot;${installedSoftwareSecondPublisher}&quot;,&#xd;
+			&quot;version&quot;: &quot;${installedSoftwareSecondVersion}&quot;,&#xd;
+			&quot;installDate&quot;: &quot;${installedSoftwareSecondInstallDate}&quot;&#xd;
+		}&#xd;
+	]&#xd;
+	&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${AgentELB}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/agent/v1/${endPointId}/asset</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+              <stringProp name="ConstantTimer.delay">2000</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="${AssetELB}/asset/v1/partner/${memberId}/endpoints/${endPointId}" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${AssetELB}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/asset/v1/partner/${memberId}/endpoints/${endPointId}</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate Status Code" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

@@ -1,0 +1,684 @@
+0    [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Asset MicroService For Site Migration-C3003690Connection Error : CreateSession :  while connecting 10.2.114.83
+25359 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of asset MS for realtime capture when user details are modified.Connection Error : CreateSession :  while connecting 10.2.114.83
+46380 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of asset MS for realtime capture when user details are modified.Connection Error : CreateSession :  while connecting 10.2.114.83
+67400 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of asset MS for realtime capture when service status is changed.Connection Error : CreateSession :  while connecting 10.2.114.83
+88450 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of asset MS for realtime capture when service status is changed.Connection Error : CreateSession :  while connecting 10.2.114.83
+109660 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of asset MS for realtime capture when service itself is modified.Connection Error : CreateSession :  while connecting 10.2.114.83
+130676 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of asset MS for realtime capture when service itself is modified.Connection Error : CreateSession :  while connecting 10.2.114.83
+151760 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Asset MicroService with Partner Id EndPoint Id with GZIP Compression-C2571185Connection Error : CreateSession :  while connecting 10.2.114.83
+172780 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Asset MicroService with Partner Id EndPoint Id-C2223496Connection Error : CreateSession :  while connecting 10.2.114.83
+193855 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Asset MicroService with Partner Id EndPoint Id without Service Pack-C2622070Connection Error : CreateSession :  while connecting 10.2.114.83
+214951 [main] ERROR continuum.cucumber.Page.Ssh  - Validation of Friendly Name for Asset MicroService via PUT Method for Empty FriendlyName-C2473189Connection Error : CreateSession :  while connecting 10.2.114.83
+235968 [main] ERROR continuum.cucumber.Page.Ssh  - Validation of Friendly Name for Asset MicroService via PUT Method for UnMapped Partner and EndPointID-C2473190Connection Error : CreateSession :  while connecting 10.2.114.83
+256984 [main] ERROR continuum.cucumber.Page.Ssh  - Validation of Friendly Name for Asset MicroService via PUT Method-C2454345Connection Error : CreateSession :  while connecting 10.2.114.83
+278161 [main] ERROR continuum.cucumber.Page.Ssh  - Validation of endpoint type for Asset MicroService via PUT Method for Empty endpoint type-C3904290Connection Error : CreateSession :  while connecting 10.2.114.83
+299175 [main] ERROR continuum.cucumber.Page.Ssh  - Validation of end point type for Asset MicroService via PUT Method for UnMapped Partner and EndPointID-C3904291Connection Error : CreateSession :  while connecting 10.2.114.83
+320187 [main] ERROR continuum.cucumber.Page.Ssh  - Validation of endpoint type for Asset MicroService via PUT Method-C3904292Connection Error : CreateSession :  while connecting 10.2.114.83
+341211 [main] ERROR continuum.cucumber.Page.Ssh  - Validation of endpoint type for Asset MicroService via PUT Method-C3904292Connection Error : CreateSession :  while connecting 10.2.114.83
+362247 [main] ERROR continuum.cucumber.Page.Ssh  - Validation of endpoint type as a part of asset MS data-C3912592Connection Error : CreateSession :  while connecting 10.2.114.83
+383276 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+404294 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+425307 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+446451 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+467560 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+488590 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+509606 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+530661 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+551672 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+572685 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+593705 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+614735 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+635748 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+656765 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+678071 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+699083 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+720371 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService-C2517063Connection Error : CreateSession :  while connecting 10.2.114.83
+741384 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService For Incorrect Attributes-C2517223Connection Error : CreateSession :  while connecting 10.2.114.83
+762662 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService For Incorrect Attributes-C2517223Connection Error : CreateSession :  while connecting 10.2.114.83
+783888 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService For Incorrect Attributes-C2517223Connection Error : CreateSession :  while connecting 10.2.114.83
+804900 [main] ERROR continuum.cucumber.Page.Ssh  - Validation for Projection of Attributes For Asset MicroService For Incorrect Attributes-C2517223Connection Error : CreateSession :  while connecting 10.2.114.83
+825921 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Asset MicroService with Partner Id EndPoint Id for uninstalled Agent-C2679857Connection Error : CreateSession :  while connecting 10.2.114.83
+846942 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to Asset Processor-C2164066Connection Error : CreateSession :  while connecting 10.2.114.83
+867954 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to Asset BaseBoard-C2223480Connection Error : CreateSession :  while connecting 10.2.114.83
+888965 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to Asset System-C2223482Connection Error : CreateSession :  while connecting 10.2.114.83
+910260 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to Asset Drives-C2223483Connection Error : CreateSession :  while connecting 10.2.114.83
+931466 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to Asset OS-C2223484Connection Error : CreateSession :  while connecting 10.2.114.83
+952563 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to Asset BIOS-C2223487Connection Error : CreateSession :  while connecting 10.2.114.83
+973761 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to Asset KeyBoard-C2245341Connection Error : CreateSession :  while connecting 10.2.114.83
+994779 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to Asset Mouse-C2245343Connection Error : CreateSession :  while connecting 10.2.114.83
+1015821 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to Asset Monitor-C2245342Connection Error : CreateSession :  while connecting 10.2.114.83
+1036831 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to Asset CDROM-Drive-C2245344Connection Error : CreateSession :  while connecting 10.2.114.83
+1057845 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to Asset Floppy Drive-C2245345Connection Error : CreateSession :  while connecting 10.2.114.83
+1078857 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to Asset UserAccount-C2245345Connection Error : CreateSession :  while connecting 10.2.114.83
+1102230 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Asset MicroService with Partner Id EndPoint Id with GZIP Compression-C2571185Connection Error : CreateSession :  while connecting 10.2.114.83
+1123241 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Asset MicroService with Partner Id EndPoint Id with GZIP Compression-C2571185Connection Error : CreateSession :  while connecting 10.2.114.83
+1144660 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Asset MicroService with Partner Id EndPoint Id with GZIP Compression-C2571185Connection Error : CreateSession :  while connecting 10.2.114.83
+1165678 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Asset MicroService with Partner Id EndPoint Id with GZIP Compression-C2571185Connection Error : CreateSession :  while connecting 10.2.114.83
+1186694 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Asset MicroService with Partner Id EndPoint Id with GZIP Compression-C2571185Connection Error : CreateSession :  while connecting 10.2.114.83
+1207717 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Performance Process MicroService with Partner Id EndPoint Id-C2148028Connection Error : CreateSession :  while connecting 10.2.114.83
+1228733 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Performance Processor MicroService with Partner Id EndPoint Id-C2223492Connection Error : CreateSession :  while connecting 10.2.114.83
+1250073 [main] ERROR continuum.cucumber.Page.Ssh  - Time Range Validation for Performance Memory MicroService-C2487750Connection Error : CreateSession :  while connecting 10.2.114.83
+1271082 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Performance Network MicroService with Partner Id EndPoint Id for-C2223493Connection Error : CreateSession :  while connecting 10.2.114.83
+1292103 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Performance Memory MicroService with Partner Id EndPoint Id-C2223494Connection Error : CreateSession :  while connecting 10.2.114.83
+1313116 [main] ERROR continuum.cucumber.Page.Ssh  - Time Range Validation for Performance Memory MicroService-C2487750Connection Error : CreateSession :  while connecting 10.2.114.83
+1334127 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Performance Storage MicroService with Partner Id EndPoint Id-C2223495Connection Error : CreateSession :  while connecting 10.2.114.83
+1355200 [main] ERROR continuum.cucumber.Page.Ssh  - Time Range Validation for Performance Processor MicroService with incorrect data-C2487748Connection Error : CreateSession :  while connecting 10.2.114.83
+1376211 [main] ERROR continuum.cucumber.Page.Ssh  - Time Range Validation for Performance Processor MicroService with both count and duration-C2487749Connection Error : CreateSession :  while connecting 10.2.114.83
+1397223 [main] ERROR continuum.cucumber.Page.Ssh  - Time Range Validation for Performance Memory MicroService with incorrect data-C2487776Connection Error : CreateSession :  while connecting 10.2.114.83
+1418235 [main] ERROR continuum.cucumber.Page.Ssh  - Time Range Validation for Performance Memory MicroService with both count and duration-C2487804Connection Error : CreateSession :  while connecting 10.2.114.83
+1439377 [main] ERROR continuum.cucumber.Page.Ssh  - Validate performance plugin schedule configuartion is changed whenever schedule POST message is posted-C1773017Connection Error : CreateSession :  while connecting 10.2.114.83
+1460391 [main] ERROR continuum.cucumber.Page.Ssh  - Validate performance plugin schedule configuartion is changed whenever schedule POST message is posted-C1773017Connection Error : CreateSession :  while connecting 10.2.114.83
+1481408 [main] ERROR continuum.cucumber.Page.Ssh  - Validate performance plugin schedule configuartion is changed whenever schedule POST message is posted-C1773017Connection Error : CreateSession :  while connecting 10.2.114.83
+1502423 [main] ERROR continuum.cucumber.Page.Ssh  - Validate performance plugin schedule configuartion is changed whenever schedule POST message is posted-C1773017Connection Error : CreateSession :  while connecting 10.2.114.83
+1523434 [main] ERROR continuum.cucumber.Page.Ssh  - Validate performance plugin schedule configuartion is changed whenever schedule POST message is posted-C1773017Connection Error : CreateSession :  while connecting 10.2.114.83
+1544458 [main] ERROR continuum.cucumber.Page.Ssh  - Validate asset plugin schedule configuartion is changed whenever schedule POST message is posted-C1045089Connection Error : CreateSession :  while connecting 10.2.114.83
+1565487 [main] ERROR continuum.cucumber.Page.Ssh  - Validate systemstate plugin schedule configuartion is changed whenever schedule POST message is posted-C2364252Connection Error : CreateSession :  while connecting 10.2.114.83
+1586499 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to LastBootUpTime-C2311727Connection Error : CreateSession :  while connecting 10.2.114.83
+1607508 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to lastLoggedOnUser.Connection Error : CreateSession :  while connecting 10.2.114.83
+1628519 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation of Information related to Logged In User-C2473188Connection Error : CreateSession :  while connecting 10.2.114.83
+1649532 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for Performance MS For Site Migration-C3003692Connection Error : CreateSession :  while connecting 10.2.114.83
+1670852 [main] ERROR continuum.cucumber.Page.Ssh  - E2E Validation for System State MicroService with Partner Id EndPoint Id-C2311724Connection Error : CreateSession :  while connecting 10.2.114.83
+1691873 [main] ERROR continuum.cucumber.Page.Ssh  - Validate asset plugin config json manifest different log levels-C1448278Connection Error : CreateSession :  while connecting 10.2.114.83
+1712891 [main] ERROR continuum.cucumber.Page.Ssh  - Validate asset plugin config json manifest different log levels-C1448278Connection Error : CreateSession :  while connecting 10.2.114.83
+1733902 [main] ERROR continuum.cucumber.Page.Ssh  - Validate asset plugin config json manifest different log levels-C1448278Connection Error : CreateSession :  while connecting 10.2.114.83
+1754930 [main] ERROR continuum.cucumber.Page.Ssh  - Validate asset plugin config json manifest different log levels-C1448278Connection Error : CreateSession :  while connecting 10.2.114.83
+1775949 [main] ERROR continuum.cucumber.Page.Ssh  - Validate asset plugin config json manifest different log levels-C1448278Connection Error : CreateSession :  while connecting 10.2.114.83
+1796961 [main] ERROR continuum.cucumber.Page.Ssh  - Validate asset plugin config json correctly updates with MaxLogFileSizeInMB-C2148024Connection Error : CreateSession :  while connecting 10.2.114.83
+1817976 [main] ERROR continuum.cucumber.Page.Ssh  - Validate asset plugin config json correctly updates with OldLogFileToKeep-C2148025Connection Error : CreateSession :  while connecting 10.2.114.83
+1838990 [main] ERROR continuum.cucumber.Page.Ssh  - Validate performance plugin config json manifest different log levels-C1242281Connection Error : CreateSession :  while connecting 10.2.114.83
+1860010 [main] ERROR continuum.cucumber.Page.Ssh  - Validate performance plugin config json manifest different log levels-C1242281Connection Error : CreateSession :  while connecting 10.2.114.83
+1881019 [main] ERROR continuum.cucumber.Page.Ssh  - Validate performance plugin config json manifest different log levels-C1242281Connection Error : CreateSession :  while connecting 10.2.114.83
+1902033 [main] ERROR continuum.cucumber.Page.Ssh  - Validate performance plugin config json manifest different log levels-C1242281Connection Error : CreateSession :  while connecting 10.2.114.83
+1923048 [main] ERROR continuum.cucumber.Page.Ssh  - Validate performance plugin config json manifest different log levels-C1242281Connection Error : CreateSession :  while connecting 10.2.114.83
+1944068 [main] ERROR continuum.cucumber.Page.Ssh  - Validate performance plugin config json correctly updates with MaxLogFileSizeInMB-C2148026Connection Error : CreateSession :  while connecting 10.2.114.83
+1965081 [main] ERROR continuum.cucumber.Page.Ssh  - Validate performance plugin config json correctly updates with OldLogFileToKeep-C2148027Connection Error : CreateSession :  while connecting 10.2.114.83
+1    [main] ERROR continuum.cucumber.Page.Ssh  - Validate Global Manifest Payload is getting created for N no of Days-C3604832Connection Error : CreateSession :  while connecting 10.2.114.83
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate Global Manifest Payload is getting created for N no of Days-C3604832Connection Establish for : 10.2.114.113:22
+4265 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate Global Manifest Payload is getting created for N no of Days-C3604832 URL is -> 
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate Global Manifest Payload is getting created for N no of Days-C3604832Connection Establish for : 10.2.114.113:22
+5025 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate Global Manifest Payload is getting created for N no of Days-C3604832 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/manifest?lastNDays=1
+0    [main] ERROR continuum.cucumber.Page.Ssh  - Validate AMS to return Global maifest file Structure for an valid endpoint-C2797459Connection Error : CreateSession :  while connecting 10.2.114.73
+0    [main] ERROR continuum.cucumber.Page.Ssh  - Validate AMS to return 500 Error code for Global maifest file for an Invalid endpoint-C2797460Connection Error : CreateSession :  while connecting 10.2.114.54
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Connection Establish for : 10.2.114.113:22
+247  [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "MEMBERID"
+929  [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "SITEID"
+3387 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "REGID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Connection Establish for : 10.2.114.113:22
+672  [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "MEMBERID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Connection Establish for : 10.2.114.113:22
+517  [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "MEMBERID"
+1553 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "SITEID"
+1781 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "REGID"
+1940 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config  & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+2136 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+3137 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+3155 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+4156 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+4172 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+5172 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+5188 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+6189 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+6206 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+7207 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+7220 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+8221 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+8238 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+9238 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+9255 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+10257 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+10275 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+12275 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+12291 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+13292 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+13624 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+14625 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+14640 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+15641 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+15788 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+16788 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+16820 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+17821 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+17865 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+19867 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+19883 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+20883 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+21325 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:net stop ITSPlatform
+41388 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:net start ITSPlatform
+172667 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+173668 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 1
+1    [main] ERROR continuum.cucumber.Page.Ssh  - Validate AMS to return 500 Error code for Global maifest file for an Invalid endpoint-C2797460Connection Error : CreateSession :  while connecting 10.2.114.54
+0    [main] ERROR continuum.cucumber.Page.Ssh  - Validate AMS to return 404 Error code for Global maifest file for an Invalid Manifest URL-C2807004Connection Error : CreateSession :  while connecting 10.2.114.54
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Connection Establish for : 10.2.114.113:22
+191  [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "MEMBERID"
+795  [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "SITEID"
+930  [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "REGID"
+1203 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config  & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1853 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Connection Establish for : 10.2.114.113:22
+77   [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "MEMBERID"
+378  [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "SITEID"
+2779 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "REGID"
+3941 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config  & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+4304 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+24986 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\tmp & C:\jq-win32.exe -r  . agent_packages.json
+28741 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609-> channel is connected
+29741 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609-> exit-status: 0
+61749 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\tmp & C:\jq-win32.exe -r  . agent_packages.json
+62763 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609-> channel is connected
+63763 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609-> exit-status: 0
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Connection Establish for : 10.2.114.113:22
+110  [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "MEMBERID"
+651  [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "SITEID"
+1366 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "REGID"
+1888 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config  & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506Connection Establish for : 10.2.114.113:22
+415  [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "MEMBERID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506Connection Establish for : 10.2.114.113:22
+286  [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "MEMBERID"
+492  [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "SITEID"
+1181 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "REGID"
+1407 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config  & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1920 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+4921 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+4938 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+5938 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+6274 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+7275 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+7325 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+8326 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+8678 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+9679 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+10008 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+12009 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+12026 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+15027 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+15044 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+16044 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+16093 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+17093 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+17109 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+18109 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+18125 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+19126 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+19212 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+20212 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+20249 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+21249 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+23981 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+24981 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+24998 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+25999 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+26380 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+28380 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 0
+28485 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506Command is:net stop ITSPlatform
+53175 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506Command is:net start ITSPlatform
+186781 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> channel is connected
+187781 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E wrt 3rd party package and custom installer-C3813506-> exit-status: 1
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Connection Establish for : 10.2.114.113:22
+530  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Connection Establish for : 10.2.114.113:22
+3169 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+4829 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Connection Establish for : 10.2.114.113:22
+608  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+1442 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Connection Establish for : 10.2.114.113:22
+46   [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+670  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+966  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+1283 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1481 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST endpoint for agent Register API-C1756740 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/registration
+0    [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST GET endpoint for feature to package mapping API-C3849956 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/features/juno
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services processes error messages from kafka queue to cassandra DB-C1082848,C2005228,C1082846,C1082847Connection Establish for : 10.2.114.113:22
+175  [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services processes error messages from kafka queue to cassandra DB-C1082848,C2005228,C1082846,C1082847Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+1299 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services processes error messages from kafka queue to cassandra DB-C1082848,C2005228,C1082846,C1082847Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+1658 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services processes error messages from kafka queue to cassandra DB-C1082848,C2005228,C1082846,C1082847Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+1964 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services processes error messages from kafka queue to cassandra DB-C1082848,C2005228,C1082846,C1082847Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+4015 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Verify agent micro services processes error messages from kafka queue to cassandra DB-C1082848,C2005228,C1082846,C1082847 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/errors
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services not processes error messages with Partner ID-C2005229Connection Establish for : 10.2.114.113:22
+1029 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services not processes error messages with Partner ID-C2005229Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+1745 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services not processes error messages with Partner ID-C2005229Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+2110 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services not processes error messages with Partner ID-C2005229Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+2712 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services not processes error messages with Partner ID-C2005229Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid schedule message-C1349818,C1320106Connection Establish for : 10.2.114.113:22
+492  [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid schedule message-C1349818,C1320106Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid schedule message-C1349818,C1320106Connection Establish for : 10.2.114.113:22
+6822 [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid schedule message-C1349818,C1320106Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid schedule message-C1349818,C1320106Connection Establish for : 10.2.114.113:22
+244  [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid schedule message-C1349818,C1320106Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid type-C1349817Connection Establish for : 10.2.114.113:22
+238  [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid type-C1349817Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid path in request payload-C1349819Connection Establish for : 10.2.114.113:22
+214  [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid path in request payload-C1349819Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST endpoint for Versioning of Agent Microservice API-C1225543 URL is -> https://integration.agent.exec.itsupport247.net/agent/version
+0    [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST response format for Versioning of Agent Microservice API-C1225544 URL is -> https://integration.agent.exec.itsupport247.net/agent/version
+0    [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST response Data for Versioning of Agent Microservice API-C1225547 URL is -> https://integration.agent.exec.itsupport247.net/agent/version
+0    [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST endpoint for HealthCheck of Agent Microservice API-C1227422 URL is -> https://integration.agent.exec.itsupport247.net/agent/health
+0    [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST response format for HealthCheck of Agent Microservice API-C1227423 URL is -> https://integration.agent.exec.itsupport247.net/agent/health
+0    [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST response Data for HealthCheck of Agent Microservice API-C1227424 URL is -> https://integration.agent.exec.itsupport247.net/agent/health
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST response format for Heartbeat API-C948095Connection Establish for : 10.2.114.113:22
+547  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST response format for Heartbeat API-C948095Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+768  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST response format for Heartbeat API-C948095Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+1263 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST response format for Heartbeat API-C948095Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+1478 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST response format for Heartbeat API-C948095Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+2749 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST response format for Heartbeat API-C948095 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/heartbeat
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Connection Establish for : 10.2.114.113:22
+645  [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1248 [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+1547 [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+2092 [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Connection Establish for : 10.2.114.113:22
+327  [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+578  [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+1262 [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+1719 [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Connection Establish for : 10.2.114.113:22
+338  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+592  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+1295 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+1618 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+14624 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Connection Establish for : 10.2.114.113:22
+14913 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+16099 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Connection Establish for : 10.2.114.113:22
+95   [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+252  [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+1584 [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+3268 [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Connection Establish for : 10.2.114.113:22
+485  [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Connection Establish for : 10.2.114.113:22
+165  [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+784  [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Connection Establish for : 10.2.114.113:22
+192  [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+994  [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+1205 [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+1497 [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+14347 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - E2E Validation of update mapping POST API-C2497635 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/registration
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Connection Establish for : 10.2.114.113:22
+1134 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1938 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+3458 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Connection Establish for : 10.2.114.113:22
+828  [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1897 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+2219 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+3182 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+3330 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/legacy/53758699/endpointmapping
+17765 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Connection Establish for : 10.2.114.113:22
+17873 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+18227 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+18470 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+18801 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+19309 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/legacy/53758699/endpointmapping
+32870 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Connection Establish for : 10.2.114.113:22
+33958 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+34367 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+34672 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+34940 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+35332 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/legacy/53758699/endpointmapping
+0    [main] ERROR continuum.cucumber.Page.Ssh  - Validate Availability Status feature with Only Partner ID-C2053348Connection Error : CreateSession :  while connecting 10.2.114.83
+0    [main] ERROR continuum.cucumber.Page.Ssh  - Validate Availability Status feature with Partner ID for multiple endpoints-C2620464Connection Error : CreateSession :  while connecting 10.2.114.83
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Connection Establish for : 10.2.114.113:22
+654  [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Connection Establish for : 10.2.114.113:22
+397  [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+1095 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+2938 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+3914 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Connection Establish for : 10.2.114.113:22
+529  [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+3008 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+3353 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+4150 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+4282 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate agent is online with Heartbeat API-C1941432 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/heartbeat
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+660  [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+14098 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+14330 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+30916 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+30983 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+44191 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+44645 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+57177 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+57547 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+72742 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+74287 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+85774 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+86472 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+98425 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+98703 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Connection Establish for : 10.2.114.113:22
+611  [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Connection Establish for : 10.2.114.113:22
+229  [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Connection Establish for : 10.2.114.113:22
+10022 [main] ERROR continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Failed : Connect Channel Exec for command [ cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json ] 
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able to communicate with LRP-C2145806Connection Establish for : 10.2.114.113:22
+94218 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Command is:cmd /c powershell.exe -command "Get-Content 'C:\Program Files (x86)\ITSPlatform\plugin\eventlog\eventlog_agent_plugin_cfg.json' |?{$_.Contains("'logLevel'")}"
+31426 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able to communicate with LRP-C2145806Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+41736 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able to communicate with LRP-C2145806Command is:cmd /c powershell.exe -command "Write-eventlog -LogName System -Source 'Ntfs' -EntryType Error -EventId 55 -Message 'Disk File System Error Event Via Powershell'"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent build version on machines-C1836911Connection Establish for : 10.2.114.113:22
+714  [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent build version on machines-C1836911Command is:cmd /c wevtutil qe Application /rd:true /f:text /c:1 /q:Event[EventData[Data='ITSPlatform']] | findstr /v /b /c:" "|find /v "Data[1035]"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Existing RMM Agent is running on machine-C1836892Connection Establish for : 10.2.114.113:22
+2527 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Existing RMM Agent is running on machine-C1836892Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Existing RMM Agent is running on machine-C1836892Connection Establish for : 10.2.114.113:22
+123  [main] INFO  continuum.cucumber.Page.Ssh  - Verify Existing RMM Agent is running on machine-C1836892Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+2664 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Existing RMM Agent is running on machine-C1836892Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+2968 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Existing RMM Agent is running on machine-C1836892Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Microservice is able to push messages in Webroot Plugin Kafka Topic-C3621661Connection Establish for : 10.2.114.113:22
+30765 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Microservice is able to push messages in Webroot Plugin Kafka Topic-C3621661Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field-C1820370Connection Establish for : 10.2.114.113:22
+475  [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field-C1820370Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+15711 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field-C1820370Connection Establish for : 10.2.114.113:22
+17260 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field-C1820370Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field-C1820370Connection Establish for : 10.2.114.113:22
+583  [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field-C1820370Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+17836 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field-C1820370Connection Establish for : 10.2.114.113:22
+18258 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field-C1820370Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1    [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length < 4-C1820373Connection Establish for : 10.2.114.113:22
+241  [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length < 4-C1820373Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+14336 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length < 4-C1820373Connection Establish for : 10.2.114.113:22
+14573 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length < 4-C1820373Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length > 20-C1820374Connection Establish for : 10.2.114.113:22
+385  [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length > 20-C1820374Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+16072 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length > 20-C1820374Connection Establish for : 10.2.114.113:22
+16348 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length > 20-C1820374Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed after agent comes online back from offline mode-C2944131Connection Establish for : 10.2.114.113:22
+366  [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed after agent comes online back from offline mode-C2944131Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+913  [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed after agent comes online back from offline mode-C2944131Command is:net stop ITSPlatform
+60700 [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed after agent comes online back from offline mode-C2944131Command is:net start ITSPlatform
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed when agent is online for LRP-C2944130Connection Establish for : 10.2.114.113:22
+5065 [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed when agent is online for LRP-C2944130Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed when agent is online for Scripting Plugin-C2944129Connection Establish for : 10.2.114.113:22
+309  [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed when agent is online for Scripting Plugin-C2944129Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Connection Establish for : 10.2.114.113:22
+341  [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+25891 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Connection Establish for : 10.2.114.113:22
+27642 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+50779 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Connection Establish for : 10.2.114.113:22
+51156 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+96503 [main] ERROR continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Connection Error : CreateSession :  while connecting 10.2.114.113
+97313 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Connection Establish for : 10.2.114.113:22
+97729 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - E2E_Validate mailbox message with messageID-C2228018Connection Establish for : 10.2.114.113:22
+533  [main] INFO  continuum.cucumber.Page.Ssh  - E2E_Validate mailbox message with messageID-C2228018Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent config json correctly updates with OldLogFileToKeep for single endpoint-C1962298Connection Establish for : 10.2.114.113:22
+2515 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent config json correctly updates with OldLogFileToKeep for single endpoint-C1962298Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+40378 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent config json correctly updates with OldLogFileToKeep for single endpoint-C1962298Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".OldLogFileToKeep" platform_agent_core_cfg.json
+40863 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent config json correctly updates with OldLogFileToKeep for single endpoint-C1962298Connection Establish for : 10.2.114.113:22
+41091 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent config json correctly updates with OldLogFileToKeep for single endpoint-C1962298Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+71485 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent config json correctly updates with OldLogFileToKeep for single endpoint-C1962298Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".OldLogFileToKeep" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Connection Establish for : 10.2.114.113:22
+224  [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "MEMBERID"
+495  [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "SITEID"
+716  [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "REGID"
+923  [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config  & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1124 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+2124 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+2138 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+3138 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+3154 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+4154 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+4166 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+5166 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+5177 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+6179 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+6193 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+7194 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+7205 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+8207 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+8218 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+9219 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+9230 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+10231 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+10245 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+11245 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+11259 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+12261 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+12276 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+13276 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+13286 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+14286 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+14295 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+15296 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+15308 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+16309 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+16322 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+17324 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 0
+17357 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:net stop ITSPlatform
+37405 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901Command is:net start ITSPlatform
+168163 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> channel is connected
+169165 [main] INFO  continuum.cucumber.Page.Ssh  - Validate auto update functionality E2E-C3790901-> exit-status: 1
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Microservice is able to push messages in Webroot Plugin Kafka Topic-C3621661Connection Establish for : 10.2.114.113:22
+29237 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Microservice is able to push messages in Webroot Plugin Kafka Topic-C3621661Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate manifest file filtering wrt Entitlements-C3849958Connection Establish for : 10.2.114.113:22
+320  [main] INFO  continuum.cucumber.Page.Ssh  - Validate manifest file filtering wrt Entitlements-C3849958Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "MEMBERID"
+537  [main] INFO  continuum.cucumber.Page.Ssh  - Validate manifest file filtering wrt Entitlements-C3849958Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "SITEID"
+796  [main] INFO  continuum.cucumber.Page.Ssh  - Validate manifest file filtering wrt Entitlements-C3849958Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "REGID"
+1108 [main] INFO  continuum.cucumber.Page.Ssh  - Validate manifest file filtering wrt Entitlements-C3849958Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config  & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Microservice is able to push messages in Webroot Plugin Kafka Topic-C3621661Connection Establish for : 10.2.114.113:22
+28662 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Microservice is able to push messages in Webroot Plugin Kafka Topic-C3621661Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Microservice is able to push messages in Webroot Plugin Kafka Topic-C3621661Connection Establish for : 10.2.114.113:22
+28713 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Microservice is able to push messages in Webroot Plugin Kafka Topic-C3621661Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate Global Manifest Payload is getting created for N no of Days-C3604832Connection Establish for : 10.2.114.113:22
+234  [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate Global Manifest Payload is getting created for N no of Days-C3604832 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/manifest?lastNDays=1
+11957 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Connection Establish for : 10.2.114.113:22
+12202 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "MEMBERID"
+12527 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "SITEID"
+12726 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c reg query HKEY_LOCAL_MACHINE\Software\Wow6432Node\SAAZOD /v "REGID"
+12923 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config  & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+13118 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+33305 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\tmp & C:\jq-win32.exe -r  . agent_packages.json
+34332 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609-> channel is connected
+35333 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609-> exit-status: 0
+65954 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\tmp & C:\jq-win32.exe -r  . agent_packages.json
+66980 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609-> channel is connected
+67980 [main] INFO  continuum.cucumber.Page.Ssh  - Validate global manifest file is downloaded when POST mailbox is pushed-C3685609-> exit-status: 0
+68305 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Connection Establish for : 10.2.114.113:22
+68501 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+68769 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+68958 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+69137 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for agent Register API-C1756740Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+69277 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST endpoint for agent Register API-C1756740 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/registration
+80682 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST GET endpoint for feature to package mapping API-C3849956 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/features/juno
+92371 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services processes error messages from kafka queue to cassandra DB-C1082848,C2005228,C1082846,C1082847Connection Establish for : 10.2.114.113:22
+92656 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services processes error messages from kafka queue to cassandra DB-C1082848,C2005228,C1082846,C1082847Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+92855 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services processes error messages from kafka queue to cassandra DB-C1082848,C2005228,C1082846,C1082847Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+93102 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services processes error messages from kafka queue to cassandra DB-C1082848,C2005228,C1082846,C1082847Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+93284 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services processes error messages from kafka queue to cassandra DB-C1082848,C2005228,C1082846,C1082847Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+93647 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Verify agent micro services processes error messages from kafka queue to cassandra DB-C1082848,C2005228,C1082846,C1082847 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/errors
+105036 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services not processes error messages with Partner ID-C2005229Connection Establish for : 10.2.114.113:22
+105308 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services not processes error messages with Partner ID-C2005229Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+105508 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services not processes error messages with Partner ID-C2005229Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+105753 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services not processes error messages with Partner ID-C2005229Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+105948 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent micro services not processes error messages with Partner ID-C2005229Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+106900 [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid schedule message-C1349818,C1320106Connection Establish for : 10.2.114.113:22
+107140 [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid schedule message-C1349818,C1320106Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+107763 [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid type-C1349817Connection Establish for : 10.2.114.113:22
+107915 [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid type-C1349817Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+108521 [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid path in request payload-C1349819Connection Establish for : 10.2.114.113:22
+108671 [main] INFO  continuum.cucumber.Page.Ssh  - Verify error code generated on sending(POST) config/schedule with invalid path in request payload-C1349819Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+108961 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST endpoint for Versioning of Agent Microservice API-C1225543 URL is -> https://integration.agent.exec.itsupport247.net/agent/version
+120151 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST response format for Versioning of Agent Microservice API-C1225544 URL is -> https://integration.agent.exec.itsupport247.net/agent/version
+131318 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST response Data for Versioning of Agent Microservice API-C1225547 URL is -> https://integration.agent.exec.itsupport247.net/agent/version
+142535 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST endpoint for HealthCheck of Agent Microservice API-C1227422 URL is -> https://integration.agent.exec.itsupport247.net/agent/health
+155021 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST response format for HealthCheck of Agent Microservice API-C1227423 URL is -> https://integration.agent.exec.itsupport247.net/agent/health
+0    [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API-C1795049,C1795050,C1795053public ip address of remote machine14.141.10.220
+642  [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API-C1795049,C1795050,C1795053public ip address of remote machine14.141.10.220
+167913 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST response Data for HealthCheck of Agent Microservice API-C1227424 URL is -> https://integration.agent.exec.itsupport247.net/agent/health
+183722 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST response format for Heartbeat API-C948095Connection Establish for : 10.2.114.113:22
+183942 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST response format for Heartbeat API-C948095Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+184124 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST response format for Heartbeat API-C948095Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+184355 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST response format for Heartbeat API-C948095Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+184531 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST response format for Heartbeat API-C948095Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+184697 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST response format for Heartbeat API-C948095 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/heartbeat
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate the Mapping of Old RMM Agent with New Juno Agent-C1933173,C1933167Connection Establish for : 10.2.114.113:22
+239  [main] INFO  continuum.cucumber.Page.Ssh  - Validate the Mapping of Old RMM Agent with New Juno Agent-C1933173,C1933167Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+513  [main] INFO  continuum.cucumber.Page.Ssh  - Validate the Mapping of Old RMM Agent with New Juno Agent-C1933173,C1933167Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+718  [main] INFO  continuum.cucumber.Page.Ssh  - Validate the Mapping of Old RMM Agent with New Juno Agent-C1933173,C1933167Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+977  [main] INFO  continuum.cucumber.Page.Ssh  - Validate the Mapping of Old RMM Agent with New Juno Agent-C1933173,C1933167Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1161 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate the Mapping of Old RMM Agent with New Juno Agent-C1933173,C1933167 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/registration
+216800 [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Connection Establish for : 10.2.114.113:22
+217003 [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+217384 [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+217657 [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+217896 [main] INFO  continuum.cucumber.Page.Ssh  - Validate heartbeat data for invalid EndpointID-C2432675Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+228571 [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Connection Establish for : 10.2.114.113:22
+228763 [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+229060 [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+229246 [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+229451 [main] INFO  continuum.cucumber.Page.Ssh  - E2E Validation of update mapping POST API-C2497635Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+240023 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - E2E Validation of update mapping POST API-C2497635 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/registration
+251804 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Connection Establish for : 10.2.114.113:22
+251995 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+252191 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+252465 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+252708 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+252847 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/legacy/53758699/endpointmapping
+264416 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Connection Establish for : 10.2.114.113:22
+264705 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+265081 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+265311 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+265593 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+265740 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/legacy/53758699/endpointmapping
+277360 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Connection Establish for : 10.2.114.113:22
+277668 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+277892 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+278109 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+278337 [main] INFO  continuum.cucumber.Page.Ssh  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+278527 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate GET API to return Endpoint based on Partner and Legacy RegID-C2517221 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/legacy/53758699/endpointmapping
+289925 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Connection Establish for : 10.2.114.113:22
+290106 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+290397 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+290744 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+290915 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent is online with Heartbeat API-C1941432Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+291063 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate agent is online with Heartbeat API-C1941432 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/heartbeat
+302752 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+303064 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+313828 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+314069 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+325209 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+325428 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API for a given valid partnerID and tokenID-C2473224public ip address of remote machine49.248.136.114
+724  [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API for a given valid partnerID and tokenID-C2473224public ip address of remote machine49.248.136.114
+336309 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+336666 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+347459 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+347808 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+358463 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+358687 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API for a given valid partnerID and tokenID-C2473224public ip address of remote machine49.248.136.114
+514  [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API for a given valid partnerID and tokenID-C2473224public ip address of remote machine49.248.136.114
+369359 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+369559 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+380377 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Connection Establish for : 10.2.114.113:22
+380592 [main] INFO  continuum.cucumber.Page.Ssh  - Validating MD5 checksum values returned from AMS-C2823612Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+391174 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able to communicate with LRP-C2145806Connection Establish for : 10.2.114.113:22
+0    [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API for a given valid partnerID and tokenID-C2473224public ip address of remote machine49.248.136.114
+612  [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API for a given valid partnerID and tokenID-C2473224public ip address of remote machine49.248.136.114
+420187 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able to communicate with LRP-C2145806Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+430391 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able to communicate with LRP-C2145806Command is:cmd /c powershell.exe -command "Write-eventlog -LogName System -Source 'Ntfs' -EntryType Error -EventId 55 -Message 'Disk File System Error Event Via Powershell'"
+531016 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent build version on machines-C1836911Connection Establish for : 10.2.114.113:22
+531249 [main] INFO  continuum.cucumber.Page.Ssh  - Verify agent build version on machines-C1836911Command is:cmd /c wevtutil qe Application /rd:true /f:text /c:1 /q:Event[EventData[Data='ITSPlatform']] | findstr /v /b /c:" "|find /v "Data[1035]"
+531903 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Existing RMM Agent is running on machine-C1836892Connection Establish for : 10.2.114.113:22
+532125 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Existing RMM Agent is running on machine-C1836892Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+532429 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Existing RMM Agent is running on machine-C1836892Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+532656 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Existing RMM Agent is running on machine-C1836892Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+533151 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field-C1820370Connection Establish for : 10.2.114.113:22
+533340 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field-C1820370Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+544365 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field-C1820370Connection Establish for : 10.2.114.113:22
+544577 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field-C1820370Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+555208 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length < 4-C1820373Connection Establish for : 10.2.114.113:22
+555411 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length < 4-C1820373Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+566337 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length < 4-C1820373Connection Establish for : 10.2.114.113:22
+566660 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length < 4-C1820373Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+577452 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent config json correctly updates with OldLogFileToKeep for single endpoint-C1962298Connection Establish for : 10.2.114.113:22
+577656 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent config json correctly updates with OldLogFileToKeep for single endpoint-C1962298Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+608209 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent config json correctly updates with OldLogFileToKeep for single endpoint-C1962298Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".OldLogFileToKeep" platform_agent_core_cfg.json
+608715 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent config json correctly updates with OldLogFileToKeep for single endpoint-C1962298Connection Establish for : 10.2.114.113:22
+608980 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent config json correctly updates with OldLogFileToKeep for single endpoint-C1962298Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+639584 [main] INFO  continuum.cucumber.Page.Ssh  - Validate agent config json correctly updates with OldLogFileToKeep for single endpoint-C1962298Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".OldLogFileToKeep" platform_agent_core_cfg.json
+640156 [main] INFO  continuum.cucumber.Page.Ssh  - E2E_Validate mailbox message with messageID-C2228018Connection Establish for : 10.2.114.113:22
+640478 [main] INFO  continuum.cucumber.Page.Ssh  - E2E_Validate mailbox message with messageID-C2228018Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+662602 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Connection Establish for : 10.2.114.113:22
+662939 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API for a given tokenID provided no RMM1.0 is installed-C2473228public ip address of remote machine49.248.136.114
+583  [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API for a given tokenID provided no RMM1.0 is installed-C2473228public ip address of remote machine49.248.136.114
+684941 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Connection Establish for : 10.2.114.113:22
+685157 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+706993 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Connection Establish for : 10.2.114.113:22
+707247 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+729242 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Connection Establish for : 10.2.114.113:22
+729462 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API for a given tokenID provided no RMM1.0 is installed-C2473228public ip address of remote machine49.248.136.114
+591  [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API for a given tokenID provided no RMM1.0 is installed-C2473228public ip address of remote machine49.248.136.114
+751406 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Connection Establish for : 10.2.114.113:22
+751588 [main] INFO  continuum.cucumber.Page.Ssh  - Validate mailbox name field for Internalization Languages-C2393560Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+773350 [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed when agent is online for Scripting Plugin-C2944129Connection Establish for : 10.2.114.113:22
+773637 [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed when agent is online for Scripting Plugin-C2944129Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API for a given tokenID provided no RMM1.0 is installed-C2473228public ip address of remote machine49.248.136.114
+600  [main] INFO  continuum.cucumber.Page.AgentMicroServiceAPI  - Validate REST endpoint for Registration POST API for a given tokenID provided no RMM1.0 is installed-C2473228public ip address of remote machine49.248.136.114
+0    [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST response for Registration POST API on the basis of partnerID-C2473192 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/118/registration
+21424 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST response for Registration POST API on the basis of partnerID-C2473192 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/118/registration
+43268 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST response for Registration POST API on the basis of partnerID-C2473192 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/118/registration
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Connection Establish for : 10.2.114.113:22
+363  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+786  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+1090 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+1412 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1790 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST endpoint for Registration POST API-C179500 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/registration
+24705 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Connection Establish for : 10.2.114.113:22
+24983 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+25198 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+25423 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+25642 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+25816 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST endpoint for Registration POST API-C179500 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/registration
+1109140 [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed when agent is online for LRP-C2944130Connection Establish for : 10.2.114.113:22
+1109396 [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed when agent is online for LRP-C2944130Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+47510 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Connection Establish for : 10.2.114.113:22
+47697 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+47925 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+48144 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+48367 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+48503 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST endpoint for Registration POST API-C179500 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/registration
+70326 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Connection Establish for : 10.2.114.113:22
+70598 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+70834 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+71155 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+71426 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for Registration POST API-C179500Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+71679 [main] INFO  continuum.cucumber.stepDefinations.desktop.JunoPlatformStepDefination  - Validate REST endpoint for Registration POST API-C179500 URL is -> https://integration.agent.exec.itsupport247.net/agent/v1/partner/1234/endpoint/69c21305-4a58-4433-a968-19120bb58afc/registration
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Connection Establish for : 10.2.114.113:22
+191  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+445  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+697  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+911  [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+12745 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Connection Establish for : 10.2.114.113:22
+12941 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "MEMBERID"
+13229 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "SITEID"
+13435 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c reg query HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\SAAZOD /v "REGID"
+13700 [main] INFO  continuum.cucumber.Page.Ssh  - Validate REST endpoint for update mapping POST API-C2497689Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1442956 [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed after agent comes online back from offline mode-C2944131Connection Establish for : 10.2.114.113:22
+1443263 [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed after agent comes online back from offline mode-C2944131Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+1443473 [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed after agent comes online back from offline mode-C2944131Command is:net stop ITSPlatform
+1486705 [main] INFO  continuum.cucumber.Page.Ssh  - Verify bulk mailbox messages are getting processed after agent comes online back from offline mode-C2944131Command is:net start ITSPlatform
+0    [main] ERROR continuum.cucumber.Page.Ssh  - Validate Availability Status feature with Only Partner ID-C2053348Connection Error : CreateSession :  while connecting 10.2.114.83
+1607416 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Microservice is able to push messages in Webroot Plugin Kafka Topic-C3621661Connection Establish for : 10.2.114.113:22
+1635750 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Microservice is able to push messages in Webroot Plugin Kafka Topic-C3621661Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Connection Establish for : 10.2.114.113:22
+221  [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+91988 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Command is:cmd /c powershell.exe -command "Get-Content 'C:\Program Files (x86)\ITSPlatform\plugin\eventlog\eventlog_agent_plugin_cfg.json' |?{$_.Contains("'logLevel'")}"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Connection Establish for : 10.2.114.113:22
+696  [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+92664 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Command is:cmd /c powershell.exe -command "Get-Content 'C:\Program Files (x86)\ITSPlatform\plugin\eventlog\eventlog_agent_plugin_cfg.json' |?{$_.Contains("'logLevel'")}"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length > 20-C1820374Connection Establish for : 10.2.114.113:22
+317  [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length > 20-C1820374Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+13727 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length > 20-C1820374Connection Establish for : 10.2.114.113:22
+14031 [main] INFO  continuum.cucumber.Page.Ssh  - Validate status code of Execute POST API for name field with min length > 20-C1820374Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Connection Establish for : 10.2.114.113:22
+290  [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+92738 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Command is:cmd /c powershell.exe -command "Get-Content 'C:\Program Files (x86)\ITSPlatform\plugin\eventlog\eventlog_agent_plugin_cfg.json' |?{$_.Contains("'logLevel'")}"
+0    [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Connection Establish for : 10.2.114.113:22
+248  [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Command is:cmd /c cd C:\Program Files (x86)\ITSPlatform\config & C:\jq-win32.exe -r ".EndPointID" platform_agent_core_cfg.json
+93037 [main] INFO  continuum.cucumber.Page.Ssh  - Verify Agent Core is able update the config file of LRP-C2145807,C2145808Command is:cmd /c powershell.exe -command "Get-Content 'C:\Program Files (x86)\ITSPlatform\plugin\eventlog\eventlog_agent_plugin_cfg.json' |?{$_.Contains("'logLevel'")}"
